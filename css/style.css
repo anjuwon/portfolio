@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li { list-style: none;}
+a { display: block; color:#333; }
+#wrap { width: 100%; background: url(./img/wrapBg.png) no-repeat;}
+.inner { width: 1200px; margin: 0 auto;}
