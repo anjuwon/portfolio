@@ -11,24 +11,23 @@ $(function() {
 //project swiper 
 var swiper = new Swiper(".explain", {
     speed: 600,
+    allowTouchMove: false,
     loop: true,
     parallax: true,
     navigation: {
-    nextEl: ".navigation .next",
-    prevEl: ".navigation .prev",
+        nextEl: ".navigation .next",
+        prevEl: ".navigation .prev",
     },
 });
 //view swiper
-var swiper = new Swiper(".view", {
+var swiper = new Swiper(".view, .mobile", {
     loop: true,
+    allowTouchMove: false,
     pagination: {
-    el: ".swiper-pagination",
+        el: ".swiper-pagination",
     },
     navigation: {
         nextEl: ".navigation .next",
         prevEl: ".navigation .prev",
     },
 });
-
-//스크롤러
-var s = skorllr.init();
