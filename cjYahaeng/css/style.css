@@ -1,11 +1,401 @@
 @charset "utf-8";
 
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'yg-jalnan';
+}
+body {
+    min-width: 1200px;
+    color: #fff;
 }
 ul, li { list-style: none;}
-a { display: block; color:#333; }
-#wrap { width: 100%; background: url(./img/wrapBg.png) no-repeat;}
+a { display: block; color:#FFF; text-decoration: none;}
 .inner { width: 1200px; margin: 0 auto;}
+
+/* header */
+#header {
+    overflow: hidden;
+    background: url(../img/bling.png) no-repeat, linear-gradient(to bottom, #319cb5, #330867 );
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.visual1 {
+    position: absolute;
+    background: url(../img/headerIllust1.svg) no-repeat;
+    width: 108px;
+    height: 103px;
+}
+.visual1.star1 {
+    left: 150px;
+    top: 50px;
+    transform: scale(0.2);
+}
+.visual1.star2 {
+    left: 300px;
+    top: 550px;
+    transform: scale(0.3);
+}
+.visual1.star3 {
+    left: 1400px;
+    top: 350px;
+    transform: scale(0.3);
+}
+.visual1.star4 {
+    left: 1200px;
+    top: 200px;
+    transform: scale(0.5);
+}
+.visual1.star5 {
+    left: 1700px;
+    top: 600px;
+    transform: scale(0.3);
+}
+.visual1.star6 {
+    left: 200px;
+    top: 600px;
+}
+.visual1.star7 {
+    left: 1300px;
+    top: 200px;
+    transform: scale(0.5);
+}
+.visual1.star8 {
+    left: 1500px;
+    top: 500px;
+    transform: scale(0.3);
+}
+.visual2 {
+    position: absolute;
+    background: url(../img/headerIllust2.png) no-repeat;
+    width: 1920px;
+    height: 165px;
+    bottom: 100px;
+}
+.visual3 {
+    position: absolute;
+    background: url(../img/headerIllust3.png) no-repeat;
+    width: 1015px;
+    height: 224px;
+    bottom: 100px;
+}
+.visual4 {
+    position: absolute;
+    background: url(../img/headerIllust4.png) no-repeat;
+    width: 1920px;
+    height: 209px;
+    bottom: 0;
+}
+
+.logo {
+    background: url(../img/logo.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.logo a {
+    width: 314px;
+    height: 391px;
+}
+.menu {
+    position: absolute;
+    right: -150px;
+    top: 0;
+    width: 150px;
+    border-left: 1px solid #fff;
+    height: 1000px;
+    display: flex;
+    align-items: flex-end;
+    transition: right 0.5s;
+}
+.menu.on {
+    right: 0;
+    transition: right 0.5s;
+}
+.menu ul {
+    margin-top: 30%;
+    height: 70%;
+}
+.menu ul li {
+    height: 10%;
+    padding-left: 15px;
+}
+.menu ul li a {
+    font-size: 20px;
+}
+.menuBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(20%,-40%);
+    width: 250px;
+    height: 250px;
+    background: #ffba00;
+    border-radius: 50%;
+}
+.menuBtn:hover {
+    width: 250px;
+    height: 250px;
+    background: #ffba00;
+    border-radius: 50%;
+    box-shadow: #ffba00;
+}
+.rope {
+    background: url(../img/rope.png) no-repeat;
+    position: absolute;
+    right: 10px;
+    top: -300px;
+    width: 50px;
+    height: 563px;
+}
+
+/* content1 */
+#content1 {
+    width: 100%;
+    height: 1100px;
+    background: url(../img/bling.png) no-repeat,#330867;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+#content1 .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1100px;
+}
+
+#content1 h2 {
+    font-size: 80px;
+    padding: 50px 0;
+}
+#content1 p {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 36px;
+}
+#content1 span {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 30px;
+    display: block;
+    margin: 70px 0;
+}
+.btn a {
+    display: inline-block;
+    background: #3d2a69;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 0 10px;
+}
+
+/* content2 */
+#content2 {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background: linear-gradient(to bottom, #330867, #6633b8);
+    text-align: center;
+}
+#content2 .inner {
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#content2 h2 {
+    font-size: 48px;
+    line-height: 60px;
+}
+#content2 h2 em {
+    font-size: 72px;
+    color:#f6bdc0;
+}
+.youtube {
+    margin: 50px 0;
+}
+#content2 a {
+    font-size: 30px;
+}
+
+/* content3 */
+#content3 {
+    width: 100%;
+    background: #6633b7;
+}
+#content3 .inner {
+    height: 1100px;
+    text-align: center;
+}
+#content3 h2 {
+    font-size: 48px;
+    padding: 50px 0;
+}
+.circle {
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    padding: 70px 0;
+    overflow: hidden;
+    position: relative;
+}
+.img1 {
+    background: url(../img/ex/ex1-2.svg) no-repeat;
+    width: 252px;
+    height: 330px;
+    /* transform: translate(100px); */
+    position: absolute;
+    bottom: 100px;
+    left: 170px;
+}
+.img2 {
+    background: url(../img/ex/ex1-1.svg) no-repeat;
+    width: 573px;
+    height: 330px;
+    /* transform: translate(0,-300px); */
+    position: absolute;
+    bottom: 40px;
+}
+.swiper1 .swiper-slide {
+    flex-direction: column;
+}
+#content3 p {
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#content3 h3 {
+    font-size: 36px;
+    margin: 10px 0 20px;
+}
+
+.img3 {
+    background: url(../img/ex/ex2-2.svg) no-repeat;
+    width: 453px;
+    height: 500px;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+.img4 {
+    background: url(../img/ex/ex2-1.svg) no-repeat;
+    width: 276px;
+    height: 330px;
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+}
+
+/* swiper1 */
+.swiper1 .swiper-wrapper {
+    border-radius: 50%;
+}
+.swiper-button-next {
+    right: 170px;
+    color:#fff;
+}
+ .swiper-button-prev {
+    left: 170px;
+    color:#fff;
+}
+
+/* content4 */
+#content4 {
+    width: 100%;
+    background: linear-gradient(to bottom, #6634b8, #af6874);
+}
+
+#content4 .inner {
+    height: 1100px;
+    text-align: center;
+}
+#content4 h2 {
+    font-size: 48px;
+    padding: 50px 0;
+}
+#content4 p {
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#content4 h3 {
+    font-size: 36px;
+    margin: 10px 0 20px;
+}
+.tabBtn button {
+    font-size: 30px;
+    color:#fff;
+    background: none;
+    border: 0;
+    margin: 0 20px;
+}
+
+/* swiper2 */
+.swiper2 .swiper-container {
+    width: 800px;
+    height: 500px;
+    padding: 50px;
+}
+.swiper2 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 300px;
+}
+.swiper2 .swiper-slide img {
+    display: block;
+    width: 50%;
+    transform: translate(50%, 50%);
+}
+.img5 {
+    background: url(../img/show/show1.svg) no-repeat;
+    height: 500px;
+    width: 800px;
+    transform: translate(300px,-450px);
+    position: absolute;
+}
+
+
+
+/* content5 */
+#content5 {
+    width: 100%;
+    background: #af6874;
+}
+#content5 .inner {
+    height: 1100px;
+    text-align: center;
+}
+#content5 h2 {
+    font-size: 48px;
+    padding: 50px 0;
+}
+
+/* swiper3 */
+.swiper3 .swiper-container {
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+}
+.swiper3 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.swiper3 .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/* content6 */
+#content6 {
+    width: 100%;
+    background: linear-gradient(to bottom, #af6874, #d2d8bc);
+  }
+  #content6 .inner {
+      height: 1100px;
+  }

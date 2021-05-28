@@ -1,32 +1,218 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>청주문화재야행</title>
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <!-- 스타일 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div>
-        <header id="header">
-            <div class="inner">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">행사소개</a></li>
-                        <li><a href="#">온라인</a></li>
-                        <li><a href="#">주요컨텐츠</a></li>
-                        <li><a href="#">참여문화유산</a></li>
-                        <li><a href="#">오시는 길</a></li>
-                    </ul>
-                </nav>
-                <h1><a href="#">logo</a></h1>
+    <header id="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">행사소개</a></li>
+                <li><a href="#">즐길거리</a></li>
+                <li><a href="#">참여문화유산</a></li>
+                <li><a href="#">갤러리</a></li>
+                <li><a href="#">오시는 길</a></li>
+            </ul>
+        </nav>
+        <div class="rope"></div>
+        <div class="menuBtn"></div>
+        <div class="visual1 star1"></div>
+        <div class="visual1 star2"></div>
+        <div class="visual1 star3"></div>
+        <div class="visual2"></div>
+        <div class="visual3"></div>
+        <div class="visual4"></div>
+        <h1 class="logo"><a href="#">logo</a></h1>
+    </header>
+    <section id="content1">
+        <div class="visual1 star4"></div>
+        <div class="visual1 star5"></div>
+        <div class="visual1 star6"></div>
+        <div class="inner">
+            <h2>청주문화재야행</h2>
+            <p>청주 원도심의 문화재와 문화유산을<br> 활용한 야간 문화 행사</p>
+            <span>일시 : 2020. 10. 12~ 2020. 10. 16</span>
+            <div class="btn">
+                <a href="#">홍보영상 보기</a>
+                <a href="#">야행 자세히 보기</a>
+                <a href="#">포스터 보기</a>
+            </div>
+        </div>
+    </section>
+    <section id="content2">
+        <div class="visual1 star7"></div>
+        <div class="visual1 star8"></div>
+        <div class="inner">
+            <h2>올해 야행은<br><em>온라인</em>이라며?<br>너도 올 수 있어, 빨리와!<br>구독 꾹 눌러두기~!</h2>
+            <div class="youtube">
+                <iframe width="600" height="350" src="https://www.youtube.com/embed/Xi9b7ImJj1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <a href="#">청주문화재야행 유튜브 구독하기</a>
+        </div>
+    </section>
+    <section id="content3">
+        <div class="inner">
+            <h2>체험</h2>
+            <div class="swiper-container swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="circle">
+                        <div class="img1" data-aos="fade-up"></div>
+                        <div class="img2" data-aos="fade-up" data-aos-duration="1000"></div>
+                    </div>
+                    <p>무형문화재의 시연X체험X공연</p>
+                    <h3>무명의 가치, 명장과 같이</h3>
+                    <div class="btn">
+                        <a href="#">1부 영상 보러가기</a>
+                        <a href="#">2부 영상 보러가기</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="circle">
+                        <div class="img3"></div>
+                        <div class="img4"></div>
+                    </div>
+                    <p>시민 아이디어로 이루어진 신나는 야행!</p>
+                    <h3>우리가 뽑은 소확행</h3>
+                    <div class="btn">
+                        <a href="#">영상 보러가기</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="circle"></div>
+                    <p>『반찬등속』과 다과한상, 달빛 아래 청주 선비의 다과상을 즐기다</p>
+                    <h3>청주 너나들이 – 반찬등속편</h3>
+                    <div class="btn">
+                        <a href="#">영상 보러가기</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="circle"></div>
+                    <p>淸酒페스타, 지역 전통주 미식회 - 전통주&음식 페어링</p>
+                    <h3>청주 너나들이 – 지역 전통주편</h3>
+                    <div class="btn">
+                        <a href="#">영상 보러가기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section id="content4">
+        <div class="inner">
+            <h2>공연</h2>
+            <div class="tabBtn">
+                <button>고려&middot;조선</button>
+                <button>근&middot;현대</button>
+            </div>
+            <div class="tabCont">
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="circle"></div>
+                        <div class="img5"></div>
+                        <p>충청도의 독특한 양반굿 문화 공연</p>
+                        <h3>충청도앉은굿</h3>
+                        <div class="btn">
+                            <a href="#">영상 보러가기</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="circle">
+                            <div class="img5"></div>
+                        </div>
+                        <p>충청도의 독특한 양반굿 문화 공연</p>
+                        <h3>충청도앉은굿</h3>
+                        <div class="btn">
+                            <a href="#">영상 보러가기</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="circle">
+                            <div class="img5"></div>
+                        </div>
+                        <p>충청도의 독특한 양반굿 문화 공연</p>
+                        <h3>충청도앉은굿</h3>
+                        <div class="btn">
+                            <a href="#">영상 보러가기</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="circle">
+                            <div class="img5"></div>
+                        </div>
+                        <p>충청도의 독특한 양반굿 문화 공연</p>
+                        <h3>충청도앉은굿</h3>
+                        <div class="btn">
+                            <a href="#">영상 보러가기</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content5">
+        <div class="inner">
+            <h2>참여문화유산</h2>
+            <div class="tabBtn2">
+                <button>유형문화재</button>
+                <button>무형문화재</button>
+                <button>문화시설&middot;유산</button>
             </div>
             
-        </header>
-    </div>
-    <div id="wrap">
-        <section>
-            <h2>행사소개</h2>
-        </section>
-    </div>
+            <div class="swiper-container swiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"></div>
+                    </div>                 
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </section>
+    <section id="content6">
+        <div class="inner">
+            <h2>갤러리</h2>
+        </div>
+    </section>
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/projectB.js"></script>
 </body>
 </html>

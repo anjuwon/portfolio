@@ -5,126 +5,72 @@
         min-width: 360px;
     }
     .inner { width: 100%; padding: 0 15px;}
-    .P { display : none; }
-
+    #wrap {
+        overflow: hidden;
+    }
     /* header */
     #header { 
-        width: 100%;
         height: auto;
         background: none;
         position: relative;
+        /* overflow: hidden; */
     }
     .top {
-        height: 95px;
-    }
-    #header .inner {
-        padding: 20px 15px;
-    }
-    /* nav */
-    .menu {
-        background: #6c6c6c;
-        position: absolute;
-        left: -640px; top: 0;
-        width: 100%;
-        height: 640px;
-        z-index: 5;
-        transition: left 0.4s;
-    }
-    .menu.on {
-        left: 0; 
-        transition: left 0.4s;
-    }
-    .menu > ul {
-        flex-direction: column;
-        align-items: flex-end;
-        background: #c3c3c3;
-        width: 50%;
-        height: 100%;
-        padding-top: 100px;
-        position: relative;
-    }
-    .menu > ul > li {
-        width: 70%;
-        text-align: right;
         position: static;
     }
-    .menu > ul li a {
-        padding: 20px 15px;
-    }
-    .menu > ul li a:hover {
-        background: #6c6c6c;
-    }
-    .menu .subMenu {
-        left: 100%;
-        top: 0;
-        height: 100%;
-        padding-top: 100px;
-    }
-    .menu .subMenu li {
-        display: flex;
-        justify-content: center;
-    }
-    .menu .subMenu a {
-        font-size: 17px;
-    }
-    .menu .subMenu a:hover {
-        width: 50%;
-        background: rgba(255,255,255, 0.4);
-        border-radius: 25px;
-    }
-    .menu ul li a:hover {
-        text-decoration: none;
-    }
+    #header .p_bt { opacity: 0; }
+    
+    
     .headerWrap div:first-child {
         height: auto;
     }
     .headerWrap p {
         display: none;
     }
-
-    .M_bt {  
-        display: block;
-        width: 30px;
-        height: 30px;
+    
+    /* nav */
+    .menu {
+        left: 640px;
+        top: 0;
+        transition: left 0.3s;
+        z-index: 20;
+        height: 700px;
     }
-    .M_bt .bar1,
-    .M_bt .bar2,
-    .M_bt .bar3{
-        z-index: 10;
-        margin-top: 3px;
-        background: #333;
-        width: 30px;
-        height: 4px;
-        position: absolute;
-        -webkit-transform: rotate(-180deg);
-        transform: rotate(-180deg);
-        transition: all 0.5s ease;
-    }
-    .M_bt .bar2{ margin-top: 13px; }
-    .M_bt .bar3{
-        margin-top: 23px;
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-    }
-    .M_bt.on .bar1{
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(45deg);
-        margin-top: 13px;
-    }
-    .M_bt.on .bar2{ 
-        opacity: 0; 
-        transition: opacity 0.3s;
-        transform: rotate(-135deg);
-    }
-    .M_bt.on .bar3{
-        -webkit-transform: rotate(45deg);
-        transform: rotate(-45deg);
-        margin-top: 13px;
+    .menu.on {
+        left: 0;
+        transition: left 0.3s;
     }
 
-    .fa-search {
-        font-size: 25px;
-        color:#333;
+    .menu > ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+    .menu > ul > li {
+        border-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu > ul > li > a {
+        padding: 10px 0;
+    }
+    .menu .subMenu {
+        width: 70%;
+        border-top:0;
+        padding-top: 0;
+        height: auto;
+        display: none;
+        background: #ccc;
+    }
+    .menu .subMenu li a {
+        padding: 5px;
+    }
+    .menu .subMenu li a:hover {
+        background: rgba(255,255,255,0.5);
+    }
+    .menuBt {
+        z-index: 30;
     }
 
     #header .inner .logo {
@@ -152,7 +98,7 @@
     #content1 { padding: 40px 0;}
     #content1 h2 {
         margin-bottom: 0;
-        font-size: 25px;
+        font-size: 30px;
     }
     .swiper1 {
         border: 0;
@@ -189,7 +135,7 @@
         padding: 40px 0;
     }
     #content2 h2 {
-        font-size: 25px;
+        font-size: 30px;
     }
     .tabMenu {
         display: flex;
@@ -198,49 +144,48 @@
     }
     .tabBtn {
         flex-direction: column;
+        width: 30%;
     }
     .tabBtn a {
-        width: 150px;text-align: right;
-        margin-right: 0;
-        border: 0;
+        width: 180px;
+        display: block;
+        padding-right: 5px;
+        text-align: right;
+        /* margin-right: 0; */
+        /* border: 0; */
         font-size: 18px;
-        background: none;
+        /* background: none; */
         height: 70px;
+        line-height: 70px;
+        margin-bottom: -1px;
     }
     .tabBtn a.active {
-        border-top: 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
         border-right: 5px solid #888;
         color:#333;
         height: 70px;
-    }
-    .tabBtn a:hover {
-        border-top: 0;
-        border-right: 5px solid #888;
-        color:#333;
     }
     .tabCont {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 350px;
+        width: 70%;
     }
     .tabCont > div {
-        flex-direction: column;
-        border: 0;
-        background:none;
-        height: auto;
+        padding: 30px;
     }
-    .tabCont > div > div {
+
+    .tabCont div div {
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px;
         top: 0;
-        opacity: 1;       
-    }
-    .tabCont > div > div.on {
-        animation: none;
+        opacity: 1;
+        margin-right: 0;  
+        margin-bottom: 10px;
     }
     .tabCont > div > div:nth-child(3) { display: none;}
     .tabCont div div > a {
@@ -260,21 +205,28 @@
     }
     .tabCont .Ex { display: none;}
 
+
+
+
     #content3 {
         padding: 40px 0;
     }
     #content3 .cont1 {
         width: 100%;
     }
+    #content3 .cont2 {
+        flex-direction: column;
+    }    
     .cont1 h2 {
         display: none;
     }
     .notice {
         justify-content: left;
+        width: 100%;
     }
     .noticeBtn {
         display: flex; 
-        width: 80%;
+        width: 100%;
         margin-top: -30px;
         text-align: left;
         padding: 0;
@@ -302,17 +254,23 @@
 
     .cont2 {display: none;}
 
+    .tabWrap {
+        flex-direction: column;
+    }
+
     .cont3 h2 {
         /* display: none; */
         margin-bottom: 0;
-        font-size: 23px;
+        font-size: 30px;
     }
     .communication {
         justify-content: left;
+        width: 100%;
     }
     .communication > a .fas {font-size: 20px;}
     .communBtn {
-        display: flex; 
+        display: flex;
+        width: 100%; 
         margin-top: -30px;
         text-align: left;
         padding: 0;
@@ -345,65 +303,25 @@
 
     /* content4 */
     #content4 h2 {
-        font-size: 25px;
+        font-size: 30px;
     }
     .detach {
         flex-direction: column;
+        align-items: center;
+        overflow: hidden;
     }
     .detach section {
-        min-height: auto;
-        height: 150px;
-        flex: 1;
-        width: 100%;
-        z-index: 1;
-        transform: none;
+        width: 400px;
+        height: 200px;
     }
-    .detach section:before {
-        left: 0;
-        width: 100%;
-        transform: none;
-    }
-    .detach section:after {
-        content: none;
-    }
-    .detach section > div {
+    .detach > section > div:first-child {
         display: flex;
-        height: auto;
-        /* justify-content: space-between; */
-        /* flex-direction: row; */
-        position: relative;
-        padding: 24px;
-        opacity: 1;
-        transform: translateY(0) skewX(0);
-        transition: none;
-    }
-    .detach section > div p {
-        display: none;
-    }
-    .detach h3 {
-        width: auto;
-        font-size: 30px;
-        margin-top: 15px;
-        margin-left: 0;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     .detach h3 + p {
         display: none;
     }
-    .detach .icon a {
-        display: inline-block;
-    }
-    .detach section:hover:after { opacity: 0; }
-    .detach section:hover div {
-        transform: none;
-        transition: none;
-    }
-    .detach section > div:hover {
-        transform: none;
-    }
-    
-    .detach section:after
-
     /* footer */
     .left ul li a, .left p {
         font-size: 12px; letter-spacing: -1px;
