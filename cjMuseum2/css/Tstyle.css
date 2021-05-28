@@ -1,0 +1,129 @@
+@charset "utf-8";
+@media (max-width:1024px) {
+    .menu {
+        background: #6c6c6c;
+        position: absolute;
+        left: -640px; top: 0;
+        width: 100%;
+        height: 640px;
+        z-index: 5;
+        transition: left 0.4s;
+    }
+    .menu.on {
+        left: 0; 
+        transition: left 0.4s;
+    }
+    .menu > ul {
+        flex-direction: column;
+        align-items: flex-end;
+        background: #c3c3c3;
+        width: 50%;
+        height: 100%;
+        padding-top: 100px;
+        position: relative;
+    }
+    .menu > ul > li {
+        width: 70%;
+        text-align: right;
+        position: static;
+    }
+    .menu > ul li a {
+        padding: 20px 15px;
+    }
+    .menu > ul li a:hover {
+        background: #6c6c6c;
+    }
+    .menu .subMenu {
+        left: 100%;
+        top: 0;
+        height: 100%;
+        padding-top: 100px;
+    }
+    .menu .subMenu li {
+        display: flex;
+        justify-content: center;
+    }
+    .menu .subMenu a {
+        font-size: 17px;
+    }
+    .menu .subMenu a:hover {
+        width: 50%;
+        background: rgba(255,255,255, 0.4);
+        border-radius: 25px;
+    }
+    .menu ul li a:hover {
+        text-decoration: none;
+    }
+    .headerWrap div:first-child {
+        height: auto;
+    }
+    .headerWrap p {
+        display: none;
+    }
+
+    .M_bt {  
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .M_bt .bar1,
+    .M_bt .bar2,
+    .M_bt .bar3{
+        z-index: 10;
+        margin-top: 3px;
+        background: #333;
+        width: 30px;
+        height: 4px;
+        position: absolute;
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        transition: all 0.5s ease;
+    }
+    .M_bt .bar2{ margin-top: 13px; }
+    .M_bt .bar3{
+        margin-top: 23px;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .M_bt.on .bar1{
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(45deg);
+        margin-top: 13px;
+    }
+    .M_bt.on .bar2{ 
+        opacity: 0; 
+        transition: opacity 0.3s;
+        transform: rotate(-135deg);
+    }
+    .M_bt.on .bar3{
+        -webkit-transform: rotate(45deg);
+        transform: rotate(-45deg);
+        margin-top: 13px;
+    }
+
+    .fa-search {
+        font-size: 25px;
+        color:#333;
+    }
+
+    #header .inner .logo {
+        width: 27%;
+    }
+    #header .headerWrap {
+        position: static;
+    }
+    
+    #header .method {
+        width: 100%; height: 60px;
+        margin-top: 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    #header .method a {
+        color: #666;
+        width: 33.33%;
+        text-align: center;
+        line-height: 58px;
+        font-size: 20px;
+    }
+}
