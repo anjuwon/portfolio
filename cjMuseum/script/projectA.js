@@ -63,7 +63,16 @@ $(document).ready(function(){
         $("#"+$(this).data('id')).addClass("active").siblings().removeClass("active");
     });
 
-
+    //분관전시 스크롤시 애니메이션 탭메뉴에 적용하기
+        $(document).scroll(function(){
+            var scroll = $(window).scrollTop();
+            var content2 = $("#content2").scrollTop();
+            if( scroll > content2 + 200){
+                $(".tabCont > div > div").addClass("on");
+            } else {
+                $(".tabCont > div > div").removeClass("on");
+            }
+        });
 
     //notice 탭메뉴
         var noticeBtn = $(".noticeBtn > a")
@@ -156,17 +165,6 @@ $(document).ready(function(){
             $(window).scrollTop(0);
             event.preventDefault();
         });
-
-
-    //리사이징
-        var lastWidth = $(window).width();
-        $(window).resize(function () {
-            if ($(window).width() != lastWidth) {
-                location.reload();
-                lastWidth = $(window).width();
-                return false;
-            }
-        });
         
 
     //모바일에서만
@@ -174,60 +172,56 @@ $(document).ready(function(){
     if(iw < 641){
 
         //모바일 subMenu 움직이기
+        // $(".menu > ul > li").mouseover(function(){
+        // $(this).find(".subMenu").stop().slideDown(300);
+        // });
+        // $(".menu > ul > li").mouseout(function(){
+        // $(this).find(".subMenu").stop().slideUp(300);
+        // });
+
         $(".menu > ul > li").mouseover(function(){
             $(this).find(".subMenu").stop().slideDown(300);
         });
         $(".menu > ul > li").mouseout(function(){
             $(this).find(".subMenu").stop().slideUp(300);
         });
-
-        //모바일에서 header vegas 삭제하기
-        $('#header').removeClass("vegasPc");
-
-
-
         
+         
 
-        
                
      
 
     
 
     // pc에서만
-    } else {
-        //header vegas 배경
-        $(".vegasPc").vegas({
-            slides: [
-                { src: "./img/bg.png", delay: 3500},
-                { src: "./img/bg2.png", delay: 3500},
-                { src: "./img/bg3.png", delay: 3500},
-                { src: "./img/bg4.png", delay: 3500},
-            ]
-        });
-
-        //분관전시 스크롤시 애니메이션 탭메뉴에 적용하기
-        $(document).scroll(function(){
-            var scroll = $(window).scrollTop();
-            var content2 = $("#content2").scrollTop();
-            if( scroll > content2 + 200){
-                $(".tabCont > div > div").addClass("on");
-            } else {
-                $(".tabCont > div > div").removeClass("on");
-            }
-        });
+    } else{
 
 
-    }
-
-
+        //header 배경
+            $(function(){
+                $("#header").vegas({
+                    slides: [
+                        { src: "./img/bg.png", delay: 3500},
+                        { src: "./img/bg2.png", delay: 3500},
+                        { src: "./img/bg3.png", delay: 3500},
+                        { src: "./img/bg4.png", delay: 3500},
+                    ]
+                });
+            });
 
     
 
-  
 
+    }
 });
 
 
-
-
+//리사이징
+var lastWidth = $(window).width();
+$(window).resize(function () {
+    if ($(window).width() != lastWidth) {
+        location.reload();
+        lastWidth = $(window).width();
+        return false;
+    }
+});

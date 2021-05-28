@@ -5,15 +5,13 @@
         min-width: 360px;
     }
     .inner { width: 100%; padding: 0 15px;}
-    #wrap {
-        overflow: hidden;
-    }
+    
     /* header */
     #header { 
         height: auto;
         background: none;
         position: relative;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     .top {
         position: static;
@@ -33,7 +31,7 @@
         left: 640px;
         top: 0;
         transition: left 0.3s;
-        z-index: 20;
+        z-index: 5;
         height: 700px;
     }
     .menu.on {
@@ -69,8 +67,10 @@
     .menu .subMenu li a:hover {
         background: rgba(255,255,255,0.5);
     }
-    .menuBt {
-        z-index: 30;
+
+    .fa-search {
+        font-size: 25px;
+        color:#333;
     }
 
     #header .inner .logo {
@@ -144,48 +144,49 @@
     }
     .tabBtn {
         flex-direction: column;
-        width: 30%;
     }
     .tabBtn a {
-        width: 180px;
-        display: block;
-        padding-right: 5px;
-        text-align: right;
-        /* margin-right: 0; */
-        /* border: 0; */
+        width: 150px;text-align: right;
+        margin-right: 0;
+        border: 0;
         font-size: 18px;
-        /* background: none; */
+        background: none;
         height: 70px;
-        line-height: 70px;
-        margin-bottom: -1px;
     }
     .tabBtn a.active {
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
+        border-top: 0;
         border-right: 5px solid #888;
         color:#333;
         height: 70px;
+    }
+    .tabBtn a:hover {
+        border-top: 0;
+        border-right: 5px solid #888;
+        color:#333;
     }
     .tabCont {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 70%;
+        width: 350px;
     }
     .tabCont > div {
-        padding: 30px;
+        flex-direction: column;
+        border: 0;
+        background:none;
+        height: auto;
     }
-
-    .tabCont div div {
-        width: auto;
+    .tabCont > div > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
         top: 0;
-        opacity: 1;
-        margin-right: 0;  
-        margin-bottom: 10px;
+        opacity: 1;       
+    }
+    .tabCont > div > div.on {
+        animation: none;
     }
     .tabCont > div > div:nth-child(3) { display: none;}
     .tabCont div div > a {
@@ -204,9 +205,6 @@
         height: 100%;
     }
     .tabCont .Ex { display: none;}
-
-
-
 
     #content3 {
         padding: 40px 0;

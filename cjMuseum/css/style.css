@@ -6,10 +6,13 @@
 * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
 ul, li { list-style: none;}
 a { display: block; color:#333; text-decoration: none;}
+html, body {
+    position: relative;
+    height: 100%;
+}
 .clearfix:before, .clearfix:after { content: ''; display: block; clear:both;}
 
 /* 레이아웃 */
-#wrap {width: 100%;}
 #header { 
     width: 100%; height: 900px;
 }
@@ -413,6 +416,18 @@ a { display: block; color:#333; text-decoration: none;}
     background: #fff;
     border: 1px solid #ccc;
 }
+/* .tabBtn a.active {
+    height: 95px;  
+    position: relative;
+    border-bottom: none;
+    border-top: 10px solid #888;
+}
+.tabBtn a.active:after {
+    content: '';
+    position: absolute; left: -1px; top: 0;
+    width:0; height: 10px;
+    background: #888;
+} */
 .tabBtn a.active {
     height: 95px;  
     position: relative;
