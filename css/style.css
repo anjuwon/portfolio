@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 ul, li {
     list-style: none;
@@ -19,7 +19,7 @@ a {
 body {
     /* font-family: 'Nanum Myeongjo', serif; */
     font-family: 'Song Myung', serif;
-    box-sizing: border-box;
+
     background-image: linear-gradient( to bottom, rgba(15,27,49,1), rgba(0,112,218,1) );
     overflow-x: hidden;
 }
@@ -59,22 +59,24 @@ body {
 }
 .menu ul li a {
     font-size: 30px;
+    color:  #FFF;
 }
 
 /* content1 */
 #content1 {
     background: #08122C;
     height: 1200px;
-    /* position: relative; */
+    position: relative;
 }
 #content1 h1 {
     color: #fff;
-    font-size: 50px;
+    font-size: 80px;
     font-style: normal;
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 5;
 }
 
 /* 별똥별 애니메이션 */
@@ -270,9 +272,12 @@ body {
 }
 .parallax_layer:nth-of-type(5) {
     transform: translateZ(-200px) scale(3);
-    display: flex;
-  justify-content: center;
-  align-items: center;
+    animation: bottle 3s ease none infinite;
+}
+@keyframes bottle {
+    0% {top: -100px;}
+    50% {top: -150px;}
+    100%{top: -100px;}
 }
 .parallax_layer:nth-of-type(4) {
     transform: translateZ(-250px) scale(3.5);  
@@ -590,14 +595,15 @@ body {
     height: 111px;
     position: absolute;
     top: -200px;
-    animation: bottle 3s ease none infinite;
+    left: 0;
+    animation: bottle2 3s ease none infinite;
     /* animation-name: wave2;
     animation-duration: 3s;
     animation-fill-mode: inherit;
     animation-timing-function: ease;
     animation-iteration-count : infinite */
 }
-@keyframes bottle {
+@keyframes bottle2 {
     0% {
         top: -100px; transform:rotate(0);
     }
@@ -636,9 +642,9 @@ body {
     background-size: cover;
     width: 80%;
     /* height: 800px; */
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     font-size: 20px;
-    padding: 20px;
+    padding: 50px;
 
 }
 .aboutBox > p {
@@ -650,9 +656,16 @@ body {
     margin-top: 50px;
     flex-wrap: wrap;
 }
-.aboutBox .cont div {
+.aboutBox .cont > div {
     width: 50%;
 }
-.aboutBox .skill {
+.skill > div {
     display: flex;
+    justify-content: space-between;
+}
+.skill > div > div {
+    width: 60px;
+}
+.skill div div img {
+    width: 100%;
 }
