@@ -36,10 +36,10 @@ $(document).ready(function(){
     
         if( bottlePosition < 1800) {
             bottlePosition += 600;
-            $(".bottle").animate({left:bottlePosition + "px"},400);
+            $(".waveWrap .bottle").animate({left:bottlePosition + "px"},400);
         } else {
             bottlePosition = 1900;
-            $(".bottle").animate({left:bottlePosition},600);
+            $(".waveWrap .bottle").animate({left:bottlePosition},600);
         }
     });
     $(".navigation .prev").click(function(){
@@ -54,6 +54,13 @@ $(document).ready(function(){
         }
     });
 
+    //bottle 클릭 시 aboutBox 애니메이션
+    $(".bottle_btn .bottle").click(function(){
+        $("#content4 .inner").addClass("on");
+    });
+    $(".aboutBox .close").click(function(){
+        $("#content4 .inner").removeClass("on");
+    });
 
 
 });
