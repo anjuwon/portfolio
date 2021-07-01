@@ -62,5 +62,19 @@ $(document).ready(function(){
         $("#content4 .inner").removeClass("on");
     });
 
+    //nav 클릭시 이동하기
+    var nav_btn = $(".menu ul li");
+    var cont = $("section");
+
+    nav_btn.click(function(e){
+        e.preventDefault(); //a태그 # 기능 차단
+        var target = $(this);
+        var index = target.index();
+        //alert(index);
+        var section = cont.eq(index);
+        var offset = section.offset().top;
+        $("html,body").animate({ scrollTop:offset },600,"easeInOutExpo");
+    });
+
 
 });
