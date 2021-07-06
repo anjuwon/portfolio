@@ -67,7 +67,7 @@ $(document).ready(function(){
     var cont = $("section");
 
     nav_btn.click(function(e){
-        e.preventDefault(); //a태그 # 기능 차단
+        e.preventDefault();
         var target = $(this);
         var index = target.index();
         //alert(index);

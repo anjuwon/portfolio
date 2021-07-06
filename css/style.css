@@ -630,7 +630,7 @@ section {
     background: url(../img/content4/letterBg.png) no-repeat center;
     background-size: cover;
     width: 80%;
-    height: 900px;
+    height: 800px;
     font-size: 20px;
     padding: 50px;
     display: flex;
@@ -638,11 +638,8 @@ section {
     align-items: flex-end;
     flex-direction: column;
 }
-.close {
-    width: 30px;
-    height: 30px;
-    background: red;
-
+.close i {
+    font-size: 30px;
 }
 .box1 {
     width: 100%;
@@ -663,22 +660,16 @@ section {
 }
 .box2 {
     height: 60%;
-    /* background: #F00; */
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
 }
 .box2 > div {
     width: 47%;
-    /* background: chartreuse; */
 }
 .box2 > div:last-child {
     width: 100%;
-    /* background: coral; */
 }
-/* .box2 h3 {
-    text-align: center;
-} */
 .box2 p {
     padding-left: 30px;
     margin-top: 20px;
@@ -719,23 +710,40 @@ section {
 /* content5 */
 #content5 {
     background: url(../img/bg3_2.png) no-repeat ,linear-gradient(to bottom, #6c7fde, #25d7ec);
-    height: 1000px;
-}
-#content5 .inner {
     position: relative;
 }
-.box3 {
-    position: absolute;
-
+#content5 .inner {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .title {
-    background: #FFF;
-    width: 300px;
-    font-size: 50px;
-}
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+    line-height: 500px;
+    height: 500px;
 
+}
+.plus {
+    position: absolute;
+    left: 650px;
+    top: 47%;
+    width: 50%;
+}
+.plus i {
+    font-size: 30px;
+    transform: rotate(45deg);
+}
+.box3 {
+    width: 50%;
+    height: 500px;
+    font-size: 30px;
+}
 .phone {
-    width: 100px;
     height: 50px;
-    background: #6c7fde;
+}
+.email {
+
 }
