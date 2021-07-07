@@ -141,7 +141,7 @@
     background-position:0 -660px;
 }
 
-/* 슬릭 배너 */
+/* slick 배너 */
 .ban {
     position:relative;
     padding:24px 0 40px;
@@ -155,7 +155,15 @@
     background:url(../img/icon.png) no-repeat -150px 0;
     text-indent:-9999px;
 }
-.ban .slick-next {position:absolute;right:-80px;top:80px;width:43px;height:43px;background:url(../img/icon.png) no-repeat -150px -43px;text-indent:-9999px;}
+.ban .slick-next {
+    position:absolute;
+    right:-80px;
+    top:80px;
+    width:43px;
+    height:43px;
+    background:url(../img/icon.png) no-repeat -150px -43px;
+    text-indent:-9999px;
+}
 .ban .slick-prev:hover {background-position: -193px 0;}
 .ban .slick-next:hover {background-position: -193px -43px;}
 .ban img {border:4px solid #DCDCDC;}
