@@ -34,7 +34,7 @@ button {border:0;}
 	/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공 */
 	.ir_su {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px;}
 
-/* margin, padding */
+/* margin */
 .mt10 {margin-top:10px;}
 .mt15 {margin-top:15px;}
 .mt20 {margin-top:20px;}
