@@ -1,14 +1,23 @@
 @charset "utf-8";
 
 /* 스킵 네비게이션 */
-#skip {}
-#skip a {position:absolute;left:0px;top:-35px; border:1px solid #FFF; color:#FFF; background:#333;line-height:30px;text-align:center;}
+#skip a {
+    position:absolute;
+    left:0px;
+    top:-35px; 
+    border:1px solid #FFF; 
+    color:#FFF; 
+    background:#333;
+    line-height:30px;
+    text-align:center;
+}
 #skip a:active, #skip a:focus {top:0;}
 
 /* 레이아웃 */
-#wrap {}
-#header {height:325px; background:url("../img/header_bg.jpg") center top repeat-x ;}
-#contents {}
+#header {
+    height:325px; 
+    background:url("../img/header_bg.jpg") center top repeat-x ;
+}
 #footer {border-top:1px solid #EEE;}
 
 /* 컨텐츠 레이아웃 */
@@ -18,17 +27,56 @@
 #cont_cont {background:#F6FDFF;}
 
 /* 컨테이너 */
-.container {width:990px;margin:0 auto;height:inherit; /*background:rgba(255,255,255,0.3);*/}
+.container {
+    width:990px;
+    margin:0 auto;
+    height:inherit;
+}
 
 /* 헤더 */
-.header .header_menu {text-align:right;}
-.header .header_menu a {color:#fff; display:inline-block; padding:10px 0 10px 13px;}
-.header .header_menu a:hover {color:#666;}
-.header .header_tit {text-align:center;}
-.header .header_tit h1 {background-color:#4aa8d4; font-size:28px; padding:5px 15px 8px 15px; display:inline-block;color:#FFF;margin-top:40px;font-weight:normal;text-transform:uppercase;}
-.header .header_tit a {display:inline-block;background:#2698cb;font-size:18px;color:#FFF;padding:5px 15px 8px 15px;margin-top:-5px;}
-.header .header_icon {text-align:center;margin:30px;}
-.header .header_icon a {width:60px;height:60px;background:url("../img/icon.png");display:inline-block;margin:0 3px;}
+.header .header_menu {
+    text-align:right;
+}
+.header .header_menu a {
+    color:#fff; 
+    display:inline-block; 
+    padding:10px 0 10px 13px;
+}
+.header .header_menu a:hover {
+    color:#666;
+}
+.header .header_tit {
+    text-align:center;
+}
+.header .header_tit h1 {
+    background-color:#4aa8d4; 
+    font-size:28px; 
+    padding:5px 15px 8px 15px; 
+    display:inline-block;
+    color:#FFF;
+    margin-top:40px;
+    font-weight:normal;
+    text-transform:uppercase;
+}
+.header .header_tit a {
+    display:inline-block;
+    background:#2698cb;
+    font-size:18px;
+    color:#FFF;
+    padding:5px 15px 8px 15px;
+    margin-top:-5px;
+}
+.header .header_icon {
+    text-align:center;
+    margin:30px;
+}
+.header .header_icon a {
+    width:60px;
+    height:60px;
+    background:url("../img/icon.png");
+    display:inline-block;
+    margin:0 3px;
+}
 .header .header_icon a.icon1 {background-position: 0 0;}
 .header .header_icon a.icon2 {background-position: 0 -60px;}
 .header .header_icon a.icon3 {background-position: 0 -120px;}
@@ -39,43 +87,74 @@
 .header .header_icon a.icon4:hover {background-position: -60px -180px;}
 
 /* 전체 메뉴 */
-.nav {overflow:hidden;padding:30px 0;}
-.nav > div {float:left;width:40%;}
-.nav > div:last-child {width:20%;}
-.nav > div h3 {font-size:18px; color:#25a2d0;margin-bottom:4px;}
-.nav > div ol {overflow:hidden;}
-.nav > div ol li {float:left;width:50%;}
-.nav > div.last ol li {width:100%;}
-.nav > div ol li a:hover {text-decoration:underline;}
+.nav {
+    overflow:hidden;
+    padding:30px 0;
+}
+.nav > div {
+    float:left;
+    width:40%;
+}
+.nav > div:last-child {
+    width:20%;
+}
+.nav > div h3 {
+    font-size:18px; 
+    color:#25a2d0;
+    margin-bottom:4px;
+}
+.nav > div ol {
+    overflow:hidden;
+}
+.nav > div ol li {
+    float:left;
+    width:50%;
+}
+.nav > div.last ol li {
+    width:100%;
+}
+.nav > div ol li a:hover {
+    text-decoration:underline;
+}
 
 /* 타이틀 */
-.tit {position:relative;}
-.tit h2 {font-size:40px;text-align:center;padding:5px 0;letter-spacing:2px;color:#2C94C4;font-family: 'Noto Serif KR', serif;}
-.tit .btn {position:absolute;right:0px;top:5px;width:60px;height:60px;background:url("../img/icon.png") no-repeat 0 -600px;}
-.tit .btn.on {background-position:0 -660px;}
-
-
-/* 배너 */
-/*
-.ban {position:relative;padding:24px 0;}
-.ban a.prev {position:absolute;left:-80px;top:60px;width:43px;height:43px;background:url(../img/icon.png) no-repeat -150px 0;}
-.ban a.next {position:absolute;right:-80px;top:60px;width:43px;height:43px;background:url(../img/icon.png) no-repeat -150px -43px;}
-.ban a.prev:hover {background-position: -193px 0;}
-.ban a.next:hover {background-position: -193px -43px;}
-.ban ul {overflow:hidden;}
-.ban ul li {float:left;width:330px;}
-.ban ul li:last-child {text-align:right;}
-.ban ul li:nth-child(2) {text-align:center;}
-.ban ul li.ban_img1 {text-align:left;}
-.ban ul li.ban_img2 {text-align:center;}
-.ban ul li.ban_img3 {text-align:right;}
-.ban ul li img {border:4px solid #DCDCDC;}
-.ban ul li img:hover {border-color:#98BCBC;}
-*/
+.tit {
+    position:relative;
+}
+.tit h2 {
+    font-size:40px;
+    text-align:center;
+    padding:5px 0;
+    letter-spacing:2px;
+    color:#2C94C4;
+    font-family: 'Noto Serif KR', serif;
+}
+.tit .btn {
+    position:absolute;
+    right:0px;
+    top:5px;
+    width:60px;
+    height:60px;
+    background:url("../img/icon.png") no-repeat 0 -600px;
+}
+.tit .btn.on {
+    background-position:0 -660px;
+}
 
 /* 슬릭 배너 */
-.ban {position:relative;padding:24px 0 40px;}
-.ban .slick-prev {position:absolute;left:-80px;top:80px;width:43px;height:43px;background:url(../img/icon.png) no-repeat -150px 0;text-indent:-9999px;}
+.ban {
+    position:relative;
+    padding:24px 0 40px;
+}
+.ban .slick-prev {
+    position:absolute;
+    left:-80px;
+    top:80px;
+    width:43px;
+    height:43px;
+    background:url(../img/icon.png) no-repeat -150px 0;
+    text-indent:-9999px;
+}
 .ban .slick-next {position:absolute;right:-80px;top:80px;width:43px;height:43px;background:url(../img/icon.png) no-repeat -150px -43px;text-indent:-9999px;}
 .ban .slick-prev:hover {background-position: -193px 0;}
 .ban .slick-next:hover {background-position: -193px -43px;}
@@ -224,7 +303,6 @@
 /* 로그인 */
 #login_wrap {background:#F2F4F5;padding:15px;margin-bottom:15px;}
 .login_header {overflow:hidden;height:30px; font-size:12px;}
-.login_header h5{}
 .login_header .lh_cheak {float:left;}
 .login_header .lh_cheak .input_check {vertical-align:-2px;}
 .login_header .lh_ip {float:left;padding-left:15px;}
