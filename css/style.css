@@ -65,7 +65,7 @@ section {
 
 /* content1 */
 #content1 {
-    /* background: #08122C; */
+    background: #08122C;
     height: 1200px;
     position: relative;
 }
@@ -74,9 +74,9 @@ section {
     font-size: 80px;
     font-style: normal;
     position: absolute;
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -50%);
+    left: 15%;
+    top: 50%;
+    z-index: 15;
 }
 
 /* 별똥별 애니메이션 */
@@ -220,7 +220,7 @@ section {
     width: 100%;  
     margin: 0; 
     padding: 0; 
-    z-index: 50;
+    z-index: 10;
 }
 .parallax {
     position: absolute; 
@@ -279,14 +279,14 @@ section {
     transform: translateZ(-300px) scale(4.5) translateY(-100px);
 }
 .parallax_layer:nth-of-type(2) {
-    transform: translateZ(-400px) scale(5);animation: ani 5s infinite forwards;
+    transform: translateZ(-400px) scale(3);
 }
 .parallax_content {
     position: absolute; 
     top: 100%; 
     left: 0;
     right: 0;
-    height: 100vh;
+    height: 2000px;
     background: #08122C; 
     transform: translateZ(0); 
     color: #fff;
@@ -309,47 +309,16 @@ section {
 }
 
 
+
 /* content2 */
 #content2 {
-    /* background: linear-gradient(to bottom, #08122c, #2f0b2b); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    /* background-attachment: fixed; */
-}
-#content2 .inner {
-    background: url(../img/illust2.png) no-repeat;
-    height: 147px;
-    opacity: 0;
-    transition: all 0.5s;
-}
-#content2 .inner.on {
-    opacity: 1;
-    transition: all 0.5s;
-}
-#content2 h2, #content2 p  {
-    position: relative;
-    left: -1400px;
-    color: #fff;
-    font-size: 150px;
-    text-align: center;
-}
-#content2 p {
-    left: 1600px
-}
-
-/* content3 */
-#content3 {
-    background: #76b2c5;
-    /* background: linear-gradient( to bottom,  #2f0b2b, #5a466d, #FFF); */
+    /* background: #76b2c5; */
+    background: linear-gradient( to bottom,  #2f0b2b, #5a466d, #FFF);
     position: relative;
     overflow: hidden;
     height: 100vh;
 }
-#content3 .inner {
+#content2 .inner {
     height: 10000px;
     display: flex;
     align-items: baseline;
@@ -595,8 +564,8 @@ section {
 }
 
 
-/* content4 */
-#content4 {
+/* content3 */
+#content3 {
     background:linear-gradient(to bottom, #76b2c5, #6c7fde);
     display: flex;
     flex-direction: column;
@@ -614,7 +583,7 @@ section {
     align-items: center;
     /* justify-content: center; */
 }
-#content4 .bottle {
+#content3 .bottle {
     background-position: center;
     animation: bottle3 3s ease backwards infinite;
     width: 300px;
@@ -649,22 +618,21 @@ section {
     border-right: 10px solid transparent;
     border-left: 10px solid  transparent;
 }
-#content4 .inner {
+#content3 .inner {
     display: flex;
     justify-content: center;
-    align-items: center; /*baseline*/
-    /* flex-direction: column; */
+    align-items: center; 
     opacity: 0;
     position: absolute;
     top: -500px;
     transition: all 2s;
 }
-#content4 .inner.on {
+#content3 .inner.on {
     opacity: 1;
     top:100px;
     transition: all 2s;
 }
-#content4 h2 {
+#content3 h2 {
     font-size: 150px;
     color: #FFF;
     opacity: 0.5;
@@ -757,60 +725,40 @@ section {
     height: 0;
 }
 
-/* content5 */
-#content5 {
-    background: url(../img/bg3_2.png) no-repeat ,linear-gradient(to bottom, #6c7fde, #25d7ec);
-    position: relative;
+/* content4 */
+#content4 {
+    background:linear-gradient(to bottom, #6c7fde, #25d7ec);
+    /* position: relative; */
+    height: 100vh;
+
 }
-#content5 .inner {
+.contact_wrap {
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    position: relative;
+    left: 0;
+    top: 0;
 }
-.title {
-    font-size: 70px;
-    width: 100%;
-    text-align: center;
-    line-height: 500px;
-    height: 500px;
-
-}
-.plus {
+#cotnent4 .bg {
     position: absolute;
-    left: 650px;
-    top: 47%;
-    width: 50%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
 }
-.plus i {
+.bg .contact_layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.message {
+    position: relative;
+    left: 600px;
+    top: 500px;
+    width: 250px;
+    height: 80px;
     font-size: 30px;
-    transform: rotate(45deg);
-}
-.box3 {
-    width: 50%;
-    height: 500px;
-    font-size: 30px;
-}
-.phone {
-    height: 50px;
-}
-
-
-
-/* 레이어 팝업 */
-/* #IR, #sprite, #slick_js {
-    padding: 30px;
-    border-radius: 50px;
-    width: 500px;
-    height: auto;
+    border-radius: 20px;
     background: #FFF;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    display: none;
-    z-index: 10000;
-    font-size: 20px;
-    font-family: none;
+    line-height: 80px;
     text-align: center;
-} */
+}
