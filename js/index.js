@@ -1,27 +1,5 @@
 $(document).ready(function(){
-    //project swiper 
-    var swiper = new Swiper(".explain", {
-        speed: 600,
-        allowTouchMove: false,
-        parallax: true,
-        navigation: {
-        nextEl: ".navigation .next",
-        prevEl: ".navigation .prev",
-        },
-    });
-    //view swiper
-    var swiper = new Swiper(".view", {
-        speed: 600,
-        allowTouchMove: false,
-        pagination: {
-        el: ".swiper-pagination",
-        },
-        navigation: {
-            nextEl: ".navigation .next",
-            prevEl: ".navigation .prev",
-        },
-    });
-
+    
     //스크롤러
     var s = skrollr.init();
 
@@ -94,6 +72,7 @@ $(document).ready(function(){
         }
 
 
+        
 
         console.log(wtop);
         console.log(dtop);
