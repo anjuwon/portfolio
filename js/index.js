@@ -28,39 +28,39 @@ $(document).ready(function(){
     //AOS
     AOS.init();
 
-    //content2 버튼 클릭시 애니메이션
+    //content3 버튼 클릭시 애니메이션
     var Count = 0; 
     var bottlePosition = 0;
     $(".navigation .next").click(function(){
         Count++;
     
         if( bottlePosition < 1800) {
-            bottlePosition += 600;
-            $(".waveWrap .bottle").animate({left:bottlePosition + "px"},400);
+            bottlePosition += 400;
+            $(".waveWrap .illust2").animate({left:bottlePosition + "px"},400);
         } else {
             bottlePosition = 1900;
-            $(".waveWrap .bottle").animate({left:bottlePosition},600);
+            $(".waveWrap .illust2").animate({left:bottlePosition},400);
         }
     });
     $(".navigation .prev").click(function(){
         Count++;
     
         if( bottlePosition > 100) {
-            bottlePosition -= 600;
-            $(".bottle").animate({left:bottlePosition + "px"},600);
+            bottlePosition -= 400;
+            $(".waveWrap .illust2").animate({left:bottlePosition + "px"},600);
         } else {
             bottlePosition = 0;
-            $(".bottle").animate({left:bottlePosition},400);
+            $(".waveWrap .illust2").animate({left:bottlePosition},400);
         }
     });
 
     //bottle 클릭 시 aboutBox 애니메이션
-    $(".bottle_btn .bottle").click(function(){
-        $("#content4 .inner").addClass("on");
-    });
-    $(".aboutBox .close").click(function(){
-        $("#content4 .inner").removeClass("on");
-    });
+    // $(".bottle_btn .bottle").click(function(){
+    //     $("#content3 .inner").addClass("on");
+    // });
+    // $(".aboutBox .close").click(function(){
+    //     $("#content3 .inner").removeClass("on");
+    // });
 
     //nav 클릭시 이동하기
     var nav_btn = $(".menu ul li");
@@ -98,6 +98,37 @@ $(document).ready(function(){
         console.log(wtop);
         console.log(dtop);
     });
+
+
+    //section마다 패럴렉스 효과 넣기
+    // $(function(){
+    //     var $section = $("#content1 ~ section"),
+    //         $sectionInfo = [];
+
+    //     $section.each(function(){
+    //         var $this = $(this);
+    //         $sectionInfo.push($this.offset().top);
+    //     });
+
+    //     console.log($sectionInfo);
+        
+    //     $section.css({position:'fixed'});
+
+    //     $(window).scroll(function(){ //window scroll event
+    //         var sct = $(this).scrollTop();
+
+    //         $section.each(function(idx){
+    //             var $this = $(this);
+    //             var $newTop = $sectionInfo[idx] - sct;
+    //             if( sct > $sectionInfo[idx]) {
+    //                 $newTop *= 0.5;
+    //             }
+                
+    //             $this.css({top:$newTop});
+    //         });
+    //     });
+
+    // });
 
 
 
