@@ -55,26 +55,50 @@ $(document).ready(function(){
     });
 
     //bottle 클릭 시 aboutBox 애니메이션
-    // $(".bottle_btn .bottle").click(function(){
-    //     $("#content3 .inner").addClass("on");
-    // });
-    // $(".aboutBox .close").click(function(){
-    //     $("#content3 .inner").removeClass("on");
-    // });
+    $(".bottle_btn .bottle").click(function(){
+        $("#content3 .inner").addClass("on");
+    });
+    $(".aboutBox .close").click(function(){
+        $("#content3 .inner").removeClass("on");
+    });
 
-    //nav 클릭시 이동하기
+    //nav 메뉴 클릭시
     var nav_btn = $(".menu ul li");
     var cont = $("section");
+        
+        //이동 애니메이션
+        nav_btn.click(function(e){
+            e.preventDefault();
+            var target = $(this);
+            var index = target.index();
+            //alert(index);
+            var section = cont.eq(index);
+            var offset = section.offset().top;
+            $("html,body").animate({ scrollTop:offset },600,"easeInOutExpo");
+        });
 
-    nav_btn.click(function(e){
-        e.preventDefault();
-        var target = $(this);
-        var index = target.index();
-        //alert(index);
-        var section = cont.eq(index);
-        var offset = section.offset().top;
-        $("html,body").animate({ scrollTop:offset },600,"easeInOutExpo");
-    });
+        // $(window).scroll(function(){
+        //     var wScroll = $(this).scrollTop();
+        //     var target = $(this);
+        //     var index = target.index();
+        //     if(wScroll >= cont.ep(index).offset().top){
+        //         nav_btn.addClass("on");
+        //     }
+        // });
+
+        //scroll값에 따라 메뉴버튼 불 들어오기
+        $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+
+            for( n=0; n < cont.length; n++){
+                if(wScroll >= cont.eq(n).offset().top){
+                    nav_btn.removeClass("active");
+                    nav_btn.eq(n).addClass("active");
+                }
+            }
+
+        });
+    
 
 
     
@@ -130,6 +154,18 @@ $(document).ready(function(){
 
     // });
 
+    // contact message 버튼 클릭시
+    $(".message").click(function(){
+        $(".message").addClass("on");
+        $(".contact").show();
+        $(".letter").hide();
+        $(".message .close").show();
+    });
+    $(".message .close").click(function(){
+        $(".message").removeClass("on");
+    });
+
+    
 
 
 });

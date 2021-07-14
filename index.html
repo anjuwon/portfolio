@@ -2,12 +2,17 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Anjuwon Portfolio</title>
     <!-- 웹폰트 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap"
+     rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <!-- 스타일 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
@@ -18,7 +23,7 @@
         <header id="header">
             <nav class="menu">
                 <ul>
-                    <li><a href="#content1">Home</a></li>
+                    <li class="active"><a href="#content1">Home</a></li>
                     <li><a href="#content2">Project</a></li>
                     <li><a href="#content3">About</a></li>
                     <li><a href="#content4">Contact</a></li>
@@ -61,7 +66,7 @@
         </section>
         <!-- // content1 -->
         <section id="content2">
-             <h2>Project</h2>
+            <h2>Project</h2>
             <div class="inner">
                 <div class="project">
                     <div class="swiper-container explain">
@@ -71,17 +76,16 @@
                                 <p data-swiper-parallax="300">웹표준을 준수한 사이트입니다.</p>
                                 <div class="shortCut" data-swiper-parallax="100">
                                     <div class="ex">
-                                        <button class="IR">IR기법</button>
-                                        <button class="sprite">이미지 스프라이트</button>
-                                        <button class="slick_js">slick.js</button>
-                                        <button class="light">lightgallery.js</button>
-                                        <button class="tab">탭메뉴</button>
-                                        <button class="popup">popup</button>
-                                        <button class="login">로그인 폼</button>
-                                        <button class="w3c">W3C</button>
+                                        <button>IR기법</button>
+                                        <button>이미지 스프라이트</button>
+                                        <button>slick.js</button>
+                                        <button>lightgallery.js</button>
+                                        <button>탭메뉴</button>
+                                        <button>popup</button>
+                                        <button>로그인 폼</button>
+                                        <button>W3C</button>
                                     </div>
                                     <a href="https://anjuwon.github.io/portfolio/webstandard" target="_blank">view</a>
-                                    <!-- <a href="#" target="_blank">pdf</a> -->
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -90,7 +94,7 @@
                                 <div class="shortCut" data-swiper-parallax="100">
                                     <div class="ex">
                                         <button>미디어쿼리</button>
-                                        <button class="IR">IR기법</button>
+                                        <button>IR기법</button>
                                         <button>해상도에 따른 이미지효과</button>
                                         <button>파비콘</button>
                                         <button>slick.js</button>
@@ -100,7 +104,6 @@
                                         <button>sns 공유하기</button>
                                     </div>
                                     <a href="https://anjuwon.github.io/portfolio/responsive" target="_blank">view</a>
-                                    <!-- <a href="#" target="_blank">pdf</a> -->
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -118,11 +121,9 @@
                                         <button>sns 공유하기</button>
                                     </div>
                                     <a href="https://anjuwon.github.io/portfolio/megabox" target="_blank">view</a>
-                                    <!-- <a href="#" target="_blank">pdf</a> -->
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <!-- 크로스브라우징, 반응형 내용 넣기 -->
                                 <h3 data-swiper-parallax="500">청주시립미술관</h3>
                                 <p data-swiper-parallax="300">기존 페이지가 어지럽다고 느껴 단순하면서 정돈된 이미지로 재구성하였습니다.
                                 </p>
@@ -212,6 +213,7 @@
         </section>
         <!-- //content2 -->
         <section id="content3">
+            <h2>About</h2>
             <div class="bottle_btn">
                 <div class="bottle"></div>
                 <div class="click">Click Me</div>
@@ -273,31 +275,28 @@
         </section>
         <!-- // content3 -->
         <section id="content4">
-            <div class="message">
-                <span>C</span>
-                <span>o</span>
-                <span>n</span>
-                <span>t</span>
-                <span>a</span>
-                <span>c</span>
-                <span>t</span>
-                <span>M</span>
-                <span>e</span>
-                <span>!</span>
+            <div class="inner">
+                <h2>Contact Me!</h2>
+                <div class="message">
+                    <span class="letter"></span>
+                    <div class="contact">
+                        <a href="" target="_blank">tel : 010 2464 2693</a>
+                        <a href="" target="_blank">mail : ajwwh20@gmail.com</a>
+                    </div>
+                    <div class="close"><i class="far fa-times-circle"></i></div>
+                </div>          
             </div>
-            <div class="contact_wrap">
-                <div class="bg">
-                    <div class="contact_layer"><img src="./img/contact/sea.png" alt="바다"></div>
-                    <div class="contact_layer"><img src="./img/contact/wave2.png" alt="물결"></div>
-                    <div class="contact_layer"><img src="./img/contact/rock.png" alt="바위"></div>
-                    <div class="contact_layer"><img src="./img/contact/wave1.png" alt="물결"></div>
-                    <div class="contact_layer"><img src="./img/contact/model.png" alt="사람"></div>
-                    <div class="contact_layer"><img src="./img/contact/cloud1.png" alt="구름1"></div>
-                    <div class="contact_layer"><img src="./img/contact/cloud2.png" alt="구름2"></div>
-                    <div class="contact_layer"><img src="./img/contact/bottle.png" alt="병"></div>
-                </div>
+            <div class="bg">
+                <div class="contact_layer"><img src="./img/contact/sea.png" alt="바다"></div>
+                <div class="contact_layer"><img src="./img/contact/wave2.png" alt="물결1"></div>
+                <div class="contact_layer"><img src="./img/contact/rock.png" alt="바위"></div>
+                <div class="contact_layer"><img src="./img/contact/wave1.png" alt="물결2"></div>
+                <div class="contact_layer"><img src="./img/contact/model.png" alt="사람"></div>
+                <div class="contact_layer"><img src="./img/contact/cloud1.png" alt="구름1"></div>
+                <div class="contact_layer"><img src="./img/contact/cloud2.png" alt="구름2"></div>
+                <div class="contact_layer"><img src="./img/contact/bottle.png" alt="병"></div>
             </div>
-           
+            
         </section>
         <!-- //content4 -->
     </div>
