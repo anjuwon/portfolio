@@ -16,18 +16,14 @@ a {
     color: #333;
     text-decoration: none;
 }
-
-
 body {
     min-width: 1200px;
     font-family: 'Song Myung', serif;
     overflow-x: hidden;
-    /* background-color: #08122C; */
 }
 .inner {
     width: 1200px; margin: 0 auto;
 }
-
 
 /* 레이아웃 */
 #wrap {
@@ -45,6 +41,8 @@ body {
 section {
     width: 100%;
     height: 100vh;
+    padding: 100px 0;
+    box-sizing:content-box;
 }
 
 /* nav */
@@ -53,7 +51,7 @@ section {
     height: 100%;
 }
 .menu ul {
-    height: 100%;
+    height: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -76,28 +74,19 @@ section {
 /* content1 */
 #content1 {
     background: #08122C;
-    height: 1500px;
     position: relative;
 }
 #content1 h1 {
-    /* background-color: rgba(255,255,255,0.2); */
     color: #FFF;
-    font-size: 90px;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
     font-weight: 500;
     position: absolute;
     left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    /* border: 1px solid #fff; */
     padding: 10px;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
-}
-.title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
 }
 
 /* 별똥별 애니메이션 */
@@ -296,7 +285,6 @@ section {
     height: 100vh; 
 }
 .parallax::-webkit-scrollbar-track {
-    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
     border-radius: 10px; 
     background-color: transparent;
 }
@@ -306,7 +294,6 @@ section {
 }
 .parallax::-webkit-scrollbar-thumb{
     border-radius: 10px;
-    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
     background-color: transparent;
 }
 .parallax_layer {
@@ -318,7 +305,6 @@ section {
 }
 .parallax_layer img {
     position: absolute; 
-    width: 100%;
     bottom: 0;
     display: block; 
 }
@@ -350,7 +336,7 @@ section {
     left: 0;
     right: 0;
     height: 1000px;
-    background: url(../img/content1bg/star.png), #08122C; 
+    background: url(../img/content1/star.png), #08122C; 
     transform: translateZ(0); 
     color: #fff;
     display: flex;
@@ -365,7 +351,7 @@ section {
     position: relative;
     width: 300px;
     height: 300px;
-    background: url(../img/illust.png) no-repeat;
+    background: url(../img/content1/illust.png) no-repeat;
     animation: shake 3s ease none infinite;
     background-size: cover;
 
@@ -377,14 +363,10 @@ section {
     font-size: 50px;
 }
 
-
-
 /* content2 */
 #content2 {
-    /* background: #76b2c5; */
     background: linear-gradient( to bottom,  #08122C, #2f0b2b);
     position: relative;
-    overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -409,7 +391,6 @@ h2 {
     justify-content: space-around;
     align-items: center;
     color: #fff;
-    margin-top: 100px;
 }
 
 
@@ -454,7 +435,6 @@ h2 {
     background: none;
     color: #FFF;
     border: 1px dashed #FFF;
-    cursor: pointer;
     font-size: 15px;
     margin: 5px;
 }
@@ -540,7 +520,7 @@ h2 {
 }
 
 
-/* wave 효과 */
+/* wave 파도물결효과 */
 .waveWrap {
     height: 25%;
     width: 100%;
@@ -549,14 +529,14 @@ h2 {
     left: 0;
 }
 .rock {
-    background: url(../img/content1bg/rock.png) no-repeat bottom;
+    background: url(../img/content1/rock.png) no-repeat bottom;
     position: relative;
     top: -40px;
     width: 100%;
     height: 100%;
 }
 .wave {
-    background: url(../img/wave.svg) repeat-x;
+    background: url(../img/content2/wave.svg) repeat-x;
     position: absolute;
     width: 6400px;
     height: 198px;
@@ -567,17 +547,14 @@ h2 {
 .wave.w01 {
     top: 45px;
     left: 100px;
-    /* opacity: 1; */
 }
 .wave.w02 {
     top: 60px;
     left: -250px;
-    /* opacity: 1; */
 }
 .wave.w03 {
     top: 100px;
     left: -600px;
-    /* opacity: 1; */
 }
 @-webkit-keyframes wave {
     0% {margin-left: 0;}
@@ -596,63 +573,46 @@ h2 {
     50% {transform: translate3d(0, 5px, 0);}
 }
 .illust2 {
-    background: url(../img/illust2.png) no-repeat;
+    background: url(../img/content2/illust2.png) no-repeat;
     display: inline-block;
     width: 360px;
     height: 147px;
     position: absolute;
     left: 0;
-    animation: shake 3s ease none infinite;
+    animation: shake2 3s ease none infinite;
     margin-top: 150px;
 }
+@keyframes shake2 {
+    0% {top: -100px; transform:rotate(0);}
+    50% {top: -70px; transform: rotate(-5deg);}
+    100% {top: -100px; transform:rotate(0);}
+}
 
-.bottle {
-    background: url(../img/bottle.svg) no-repeat;
-    display: inline-block;
-    width: 79px;
-    height: 111px;
-    position: absolute;
-    left: 0;
-    animation: bottle2 3s ease none infinite;
-    /* animation-name: bottle2;
-    animation-duration: 3s;
-    animation-fill-mode: inherit;
-    animation-timing-function: ease;
-    animation-iteration-count : infinite */
-}
-@keyframes bottle1 {
-    0% {top: 355px; transform:rotate(0);}
-    50% {top: 335px; transform: rotate(-2deg);}
-    100% {top: 355px; transform:rotate(0);}
-}
+
 
 
 /* content3 */
 #content3 {
-    background:linear-gradient(to bottom, #5195bc, #76b2c5, #6c7fde);
+    background:linear-gradient(to bottom, #6fadc4, #76b2c5, #6c7fde);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     position: relative;  
 }
-
 .bottle_btn {
     width: 300px;
-    height: 100px;
     position: relative;
-    /* top: 200px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
 }
 #content3 .bottle {
-    background-position: center;
+    background: url(../img/content3/bottle.svg) no-repeat;
     animation: bottle2 3s ease backwards infinite;
-    width: 300px;
-    left: 0%;
-    top: 0;
+    width: 79px;
+    height: 111px;
     transform: rotate(-26deg);
     text-align: center;
     cursor: pointer;
@@ -663,10 +623,10 @@ h2 {
     100% {transform: rotate(-41deg);}
 }
 
+
 .click {
     font-size: 30px;
-    font-size: 30px;
-    margin: 130px 0 0 10px;
+    margin-top: 20px;
     background: rgba(255,255,255,0.5);
     padding: 5px;
     border-radius: 10px;
@@ -683,27 +643,48 @@ h2 {
     border-right: 10px solid transparent;
     border-left: 10px solid  transparent;
 }
+.bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bg .bg_layer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.bg .bg_layer img {
+    display: block;
+}
+
 #content3 .inner {
+    width: 1300px;
     display: flex;
     justify-content: center;
     align-items: center; 
     opacity: 0;
     position: absolute;
-    top: -500px;
+    transform: translate(0px, -50%);
+    top: 50%;
+    left: 100%;
     transition: all 2s;
 }
 #content3 .inner.on {
     opacity: 1;
-    top:100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: all 2s;
 }
 #content3 h2 {
     opacity: 0.5;
 }
 .aboutBox {
-    background: url(../img/content4/letterBg.png) no-repeat center;
+    background: url(../img/content3/aboutbox.png) no-repeat center;
     background-size: cover;
-    width: 80%;
+    width: 100%;
     height: 800px;
     font-size: 20px;
     padding: 50px;
@@ -724,7 +705,6 @@ h2 {
 .box1 {
     width: 100%;
     height: 40%;
-    /* background: #FF0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -733,7 +713,7 @@ h2 {
     width: 250px;
     height: 250px;
     border: 1px solid #FFF;
-    background: url();
+    background: url(../img/content3/thum.png) center no-repeat;
 }
 .box1 p {
     font-size: 40px;
@@ -762,53 +742,45 @@ h2 {
 .box2 .LICENSE {
     height: 40%;
 }
-.box2 .SKILL {
-    height: 60%;
-}
 .SKILL > div {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    width: 85%;
 }
 .SKILL > div > div {
     width: 60px;
-    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 .SKILL div div img {
     width: 100%;
 }
 .number {
-    font-size: 30px;
-    height: 0;
+    font-size: 50px;
 }
 
 /* content4 */
 #content4 {
     background:linear-gradient(to bottom, #6c7fde, #25d7ec);
     position: relative;
-    /* height: 100vh; */
-
 }
 #content4 .inner {
     position: relative;
     height: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 #content4 h2 {
-    padding-top: 200px;
+    position: absolute;
+    top: 550px;
 }
 .message {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 85%;
     transform: translate(-50%, -50%);
     background: #FFF;
     z-index: 10;
@@ -818,9 +790,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     transition: all 0.4s;
-    /* animation: shake 5s ease none infinite; */
 }
 .message.on {
     transition: all 0.4s;
@@ -833,20 +803,22 @@ h2 {
     display: block;
     width: 50px;
     height: 50px;
-    background: url(../img/letter.svg) no-repeat;
+    background: url(../img/content4/letter.svg) no-repeat;
+    cursor: pointer;
 }
 .message:hover .letter {
-    background: url(../img/letter-open.svg) no-repeat;
+    background: url(../img/content4/letter-open.svg) no-repeat;
 }
 .message .close {
     display: none;
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 15;
 }
 .contact {
     display: none;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
 }
 .contact a {
@@ -855,33 +827,21 @@ h2 {
 .contact a:last-child {
     margin-bottom: 0;
 }
-
-.bg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.bg .contact_layer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-}
-.bg .contact_layer img {
-    display: block;
-    width: 100%;
-}
-
-.bg .contact_layer:nth-child(2) {
+#content4 .bg_layer:nth-child(2) {
     animation: wave2 3.5s ease none infinite;
     opacity: 0;
 }
-.bg .contact_layer:nth-child(4) {
+#content4 .bg_layer:nth-child(4) {
     animation: wave3 3s ease none infinite;
     opacity: 0;
+}
+
+#content4 .bg_layer:nth-child(9) {
+    bottom: -10px;
+}
+#content4 .bg_layer:nth-child(10) {
+    left: -100px;
+    bottom: 50px;
 }
 
 @keyframes wave2 {

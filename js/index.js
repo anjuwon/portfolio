@@ -74,19 +74,10 @@ $(document).ready(function(){
             //alert(index);
             var section = cont.eq(index);
             var offset = section.offset().top;
-            $("html,body").animate({ scrollTop:offset },600,"easeInOutExpo");
+            $("html,body").animate({ scrollTop:offset + 100 + "px" },600,"easeInOutExpo");
         });
 
-        // $(window).scroll(function(){
-        //     var wScroll = $(this).scrollTop();
-        //     var target = $(this);
-        //     var index = target.index();
-        //     if(wScroll >= cont.ep(index).offset().top){
-        //         nav_btn.addClass("on");
-        //     }
-        // });
-
-        //scroll값에 따라 메뉴버튼 불 들어오기
+        //scroll값에 따라 nav 메뉴에 별 들어오기
         $(window).scroll(function(){
             var wScroll = $(this).scrollTop();
 
@@ -98,30 +89,43 @@ $(document).ready(function(){
             }
 
         });
-    
-
 
     
-    //스크롤값
-    var wscroll = $(window).scrollTop();
-    var dscroll = $(document).scrollTop();
-    var content2 = $("#content2").scrollTop();
-    
-    $(document).scroll(function(){
-        wtop = $(window).scrollTop();
-        dtop = $(document).scrollTop();
-
-        // if(dtop >= 1200){
-        //     $("#content2 .inner").addClass("on");
-        // }else {
-        //     $("#content2 .inner").removeClass("on");
-        // }
-
-
-
-        console.log(wtop);
-        console.log(dtop);
+        // contact message 버튼 클릭시
+    $(".message .letter").click(function(){
+        $(".message").addClass("on");
+        $(".contact").show();
+        $(".letter").hide();
+        $(".message .close").css("display","block");
     });
+
+    $(".message .close").click(function(){
+        $(".message").removeClass("on");
+        $(".contact").hide();
+        $(".letter").show();
+        $(".message .close").css("display","none");
+    });
+    
+
+
+    
+    //스크롤값 알기
+    // var wscroll = $(window).scrollTop();
+    // var dscroll = $(document).scrollTop();
+
+    // $(window).scroll(function(){
+    //     wtop = $(window).scrollTop();
+    //     dtop = $(document).scrollTop();
+
+    //     if(dtop >= 1200){
+    //         $("#content2 .inner").addClass("on");
+    //     }else {
+    //         $("#content2 .inner").removeClass("on");
+    //     }
+
+    //     console.log(wtop);
+    //     console.log(dtop);
+    // });
 
 
     //section마다 패럴렉스 효과 넣기
@@ -151,19 +155,9 @@ $(document).ready(function(){
     //             $this.css({top:$newTop});
     //         });
     //     });
-
     // });
 
-    // contact message 버튼 클릭시
-    $(".message").click(function(){
-        $(".message").addClass("on");
-        $(".contact").show();
-        $(".letter").hide();
-        $(".message .close").show();
-    });
-    $(".message .close").click(function(){
-        $(".message").removeClass("on");
-    });
+
 
     
 
