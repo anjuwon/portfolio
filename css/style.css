@@ -330,7 +330,7 @@ section {
 .parallax_layer:nth-of-type(2) {
     transform: translateZ(-300px) scale(4);
 }
-.parallax_content {
+/* .parallax_content {
     position: absolute; 
     top: 100%; 
     left: 0;
@@ -354,14 +354,13 @@ section {
     background: url(../img/content1/illust.png) no-repeat;
     animation: shake 3s ease none infinite;
     background-size: cover;
-
 }
 .parallax_content p {
     font-size: 40px;
 }
 .parallax_content p span {
     font-size: 50px;
-}
+} */
 
 /* content2 */
 #content2 {
