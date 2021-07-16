@@ -714,8 +714,12 @@ h2 {
     background: url(../img/content3/thum.png) center no-repeat;
 }
 .box1 p {
-    font-size: 40px;
+    font-size: 25px;
     margin-left: 20px;
+}
+.box1 p span {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
 }
 .box2 {
     height: 60%;
