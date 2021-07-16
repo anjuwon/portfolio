@@ -74,7 +74,12 @@ $(document).ready(function(){
             //alert(index);
             var section = cont.eq(index);
             var offset = section.offset().top;
-            $("html,body").animate({ scrollTop:offset + 100 + "px" },600,"easeInOutExpo");
+            
+            if( index <= 0 ){
+                $("html,body").animate({ scrollTop:offset},600,"easeInOutExpo");
+            } else {
+                $("html,body").animate({ scrollTop:offset + 100 + "px" },600,"easeInOutExpo");
+            }
         });
 
         //scroll값에 따라 nav 메뉴에 별 들어오기
