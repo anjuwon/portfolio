@@ -1,0 +1,48 @@
+@charset "utf-8";
+#title {
+  background: #555 url(../images/joinBg.png) no-repeat center;
+}
+#title .icon {
+  background: url(../images/ICON/user.png) no-repeat center bottom;
+  background-size: contain;
+}
+
+.joinBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.joinTop {
+  font-size: 30px;
+  text-align: center;
+}
+.joinTitle p {
+  font-size: 20px;
+}
+.joinCont,
+.joinBtn {
+  margin: 0 auto;
+  width: 50%;
+}
+.joinBirth span:last-child {
+  margin-right: 0;
+}
+.addressInput span {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.addressInput button {
+  width: 17%;
+  border: 0;
+  height: 39px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1px;
+}
+
+.addressInput span:first-child {
+  display: inline-block;
+  width: 83%;
+}

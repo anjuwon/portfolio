@@ -1,0 +1,76 @@
+.pagenation {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+.page {
+  margin: 0 10px;
+}
+.page_btn a,
+.page strong {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  text-indent: -9999px;
+  line-height: 26px;
+}
+.page strong {
+  width: 15px;
+  height: 20px;
+  background: none;
+  text-indent: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+.page_wrap strong:hover {
+  border-bottom: 1px solid #555;
+}
+.page_wrap strong.on {
+  border-bottom: 1px solid #555;
+  font-weight: 500;
+}
+.bbs_info {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 15px;
+}
+.bbs_info .line {
+  position: relative;
+}
+.bbs_info .line:after {
+  content: '';
+  width: 1px;
+  height: 18px;
+  background: #ddd;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+.prev_group .previous {
+  background: url(../images/ICON/pagenation_icon/pagenation_left.png) no-repeat center;
+}
+.prev_group .first {
+  background: url(../images/ICON/pagenation_icon/pagenation_first.png) no-repeat center;
+}
+.next_group .next {
+  background: url(../images/ICON/pagenation_icon/pagenation_right.png) no-repeat center;
+}
+.next_group .last {
+  background: url(../images/ICON/pagenation_icon/pagenation_last.png) no-repeat center;
+}
+
+
+@media(max-width:1280px){
+
+}
+@media(max-width:992px){
+  
+}
+@media(max-width:768px){
+  
+}
+@media(max-width:576px){
+  
+}

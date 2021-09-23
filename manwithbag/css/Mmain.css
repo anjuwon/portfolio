@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+@media(max-width:1280px){
+    h2 {
+        font-size: 50px;
+    }
+
+
+    /* visual */
+    #visual {
+        height: 50vh;
+    }
+
+    /* intro */
+    .infoCont {
+        padding: 20px 50px;
+        letter-spacing: -1px;
+    }
+    .infoCont h3 {
+        margin: 50px 0;
+        font-size: 24px;
+    }
+    .infoCont div p, .historyCont ul li  {
+        font-size: 18px;
+    }
+    .historyCont h3 {
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+    .historyBox {
+        background-size: cover;
+    }
+
+    /* shopping */
+    #shopping {
+        height: 60vh;
+    }
+    .swiper.shopping .swiper-slide {
+        height: 387px;
+    }
+    .swiper.shopping .swiper-slide:last-child {
+        margin-right: 0;
+    }
+    .boxTitle {
+        font-size: 20px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+
+    /* insta */
+    #insta {
+        height: 80vh;
+    }
+    .instaCont > div:first-child {
+        height: 90%;
+    }
+    .instaTitle {
+        height: 10%;
+        background-size: contain;
+        margin-bottom: 10px;
+    }
+    .instaCont {
+        height: 75%;
+    }
+    .postbox {
+        width: 240px;
+        height: 240px;
+    }
+    .postGroup {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .instaBox .btnGroup a {
+         padding: 15px 10px;
+    }
+    .instaCont > div:last-child {
+        padding: 0;
+    }
+
+    /* map */
+    #map {
+        height: 60vh;
+    }
+    .mapCont ul li {
+        font-size: 20px;
+    }
+
+
+    /* consult */
+    #consult {
+        height: 60vh;
+    }
+    .consultBox p {
+        font-size: 20px;
+        line-height: 30px
+    }
+    .consultBox2 {
+        width: 70%;
+        padding: 30px 0;
+    }
+    .consultBox2 img {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+@media(max-width:992px){
+    #visual {
+        height: 40vh;
+    }
+    .swiper.shopping .swiper-slide {
+        height: 224px;
+    }
+    .shopping.swiper-container-horizontal > .swiper-scrollbar {
+        bottom: 50px;
+    }
+    .postGroup {
+        width: 100%;
+        margin: 0;
+    }
+    .postbox {
+        width: 220px;
+        height: 220px;
+    }
+    .instaCont > div:first-child {
+        padding: 0;
+        height: 83%;
+    }
+    .instaBox .btnGroup a {
+        width: 18%;
+    }
+    .mapCont ul li {
+        font-size: 18px;
+    }
+}
+@media(max-width:768px){
+    #visual {
+        height: 20vh;
+    }
+    .tagBox {
+        font-size: 13px;
+        margin-left: 20px;
+    }
+
+
+    .instaBox .btnGroup a {
+        width: 22%;
+    }
+    .instaCont > div:first-child {
+        height: 70%;
+    }
+    
+}
+@media(max-width:576px){
+    
+}

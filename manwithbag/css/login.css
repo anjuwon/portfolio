@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#title {
+  background: #fff url(../images/loginBg.png) no-repeat center;
+}
+#title .icon {
+  background: url(../images/ICON/login.png) no-repeat center bottom;
+  background-size: contain;
+}
+/* .titleBox h2 {
+  margin-bottom: 117px;
+} */
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.loginBox h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+.loginCont,
+.loginBtn {
+  width: 50%;
+  margin: 0 auto;
+}
+.loginBox .inputGroup {
+  margin: 0 auto;
+}
+.login .inputBox {
+  margin-bottom: 15px;
+}
+.buttonGroup {
+  padding: 0 20px;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.buttonGroup a:hover {
+  border-bottom: 1px solid #333;
+}
