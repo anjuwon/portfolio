@@ -35,7 +35,7 @@ nav .manager-btn {
 .active {
   border-bottom: 1px solid #fff;
 }
-header > div {
+header .menu {
   width: 20%;
 }
 header a {
@@ -44,6 +44,9 @@ header a {
 }
 .menu a {
   font-size: 13px;
+}
+.menu a:first-child {
+  margin-right: 15px;
 }
 
 #footer {
@@ -93,10 +96,15 @@ header a {
 .footerInfo {
   height: 150px;
 }
+
 .footerInfo .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 14px;
+}
+.footerInfoBox {
+  line-height: 20px;
   font-size: 14px;
 }
 
@@ -105,4 +113,29 @@ header a {
   height: 80%;
   background: url(../images/logo_black.png) no-repeat center;
   background-size: contain;
+}
+
+@media (max-width: 992px) {
+  header h1 a {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  header h1 a {
+    width: 70%;
+  }
+  header nav {
+    width: 60%;
+  }
+  header nav a {
+    font-size: 18px;
+  }
+  header h1 {
+    width: 20%;
+  }
+  header .menu {
+    width: 20%;
+    display: flex;
+    margin-right: 5px;
+  }
 }

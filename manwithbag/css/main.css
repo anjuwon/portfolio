@@ -4,14 +4,11 @@ main {
   width: 100%;
   height: 100%;
 }
-/* h2 {
-  margin-top: 100px;
-} */
 
 /* visual */
 #visual {
   height: 90vh;
-  background: url(../images/visualBg.png) no-repeat center;
+  background: url(../images/visualBg2.png) no-repeat center;
   background-size: cover;
 }
 
@@ -37,9 +34,9 @@ main {
   letter-spacing: 5px;
 }
 .infoCont h3 {
-  font-size: 30px;
   text-align: center;
   margin: 70px 0;
+  font-size: 30px;
 }
 .infoCont div p {
   font-size: 20px;
@@ -66,7 +63,8 @@ main {
 
 /* history */
 .historyBox {
-  background: #555 url(../images/historyBg.png) no-repeat;
+  background: #555 url(../images/historyBg.png) no-repeat right;
+  background-size: contain;
   color: #fff;
   padding: 50px 0;
 }
@@ -121,13 +119,17 @@ main {
   display: flex;
   align-items: center;
 }
-.swiper.shopping {
-  height: 90%;
-}
 .tagBox {
   margin-left: 100px;
 }
-
+.tagBox span {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  color: #555;
+  font-style: italic;
+}
 
 /* swiper.shopping */
 .swiper {
@@ -159,9 +161,7 @@ main {
   height: 100%;
   object-fit: cover;
 }
-
 .swiper.shopping {
-  height: 90%;
   overflow: hidden;
 }
 .swiper.shopping .swiper-wrapper {
@@ -171,7 +171,7 @@ main {
 }
 .swiper.shopping .swiper-slide {
   background: none;
-  height: 450px;
+  height: 406px;
   border: 1px solid #555;
   position: relative;
   box-sizing: border-box;
@@ -190,7 +190,6 @@ main {
   opacity: 1;
 }
 
-
 /* insta */
 .instaBox {
   /* padding: 5px; */
@@ -198,25 +197,31 @@ main {
   box-sizing: border-box;
 }
 .instaTitle {
-  height: 15%;
+  height: 10%;
   background: url(../images/instagramLogo.png) no-repeat center;
+  background-size: contain;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 .instaCont {
-  height: 85%;
+  height: 90%;
 }
 .instaCont > div:first-child {
   padding: 0 15px;
-  height: 76%;
+  /* height: 80%; */
   background: #fff;
 }
-.postbox {
+.instaCont .btnGroup {
+  height: 20%;
+}
+.postBox {
   width: 300px;
   height: 300px;
   border: 1px solid #ddd;
   margin-bottom: 10px;
   position: relative;
 }
-.postbox:hover a:after {
+.postBox:hover a:after {
   content: '';
   width: 100%;
   height: 100%;
@@ -225,7 +230,7 @@ main {
   top: 0;
   background: rgba(221, 221, 221, 0.7);
 }
-.postbox img {
+.postBox img {
   width: 100%;
   height: 100%;
   display: block;
@@ -234,7 +239,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.postGroup:last-child .postbox {
+.postGroup:last-child .postBox {
   margin-bottom: 0;
 }
 
@@ -259,23 +264,29 @@ main {
 .mapCont {
   height: 90%;
 }
-.mapCont .row {
-  height: 100%;
+.mapCont > div {
+  display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 24px;
+  height: 100%;
 }
-.mapCont .row > ul > li {
+.mapCont ul li {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  font-size: 20px;
 }
-.mapCont .row .sort {
+.mapCont .sort {
   align-items: flex-start;
 }
-.mapCont .row .sort li {
+.mapCont .sort li {
   margin-bottom: 10px;
 }
-.mapCont .tag {
+.mapCont .tagBox {
+  margin-left: 0;
+}
+.mapCont .tagBox span {
   font-style: normal;
 }
 
@@ -303,9 +314,9 @@ main {
 /* consult */
 #consult {
   background: #f9f9f9;
-  height: 70vh;
-  padding-top: 100px;
+  height: 60vh;
   box-sizing: border-box;
+  padding-top: 50px;
 }
 .consultBox {
   display: flex;
@@ -313,14 +324,32 @@ main {
   height: 100%;
 }
 .consultTitle {
-  height: 40%;
+  height: 20%;
   text-align: center;
 }
 
 .consultCont {
-  display: flex;
+  height: 80%;
   text-align: center;
-  height: 60%;
-  align-items: center;
 }
-
+.consultCont > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.consultCont > p {
+  margin: 30px 0;
+  font-size: 30px;
+  line-height: 50px;
+}
+.consultCont div a p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+.consultCont a {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.consultCont a img {
+  width: 100%;
+}
