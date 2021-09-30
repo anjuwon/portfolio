@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* shopping */
+    .sub-visual.shop-visual { background: #555 url(../images/shop-list-bg.png) no-repeat center; background-size: cover; }
+
+    /* .banner { border: 1px solid #ddd;} */
+    .banner { margin-top: 100px; position: relative; }
+    .banner .card {background: url(../images/banner-bg.png) no-repeat right; min-height: 350px;}
+    .banner .card .card-header .title { padding-bottom: 0;}
+    .banner .card .card-body .button-group { text-align: left;}
+    .banner .card .card-body .button-group a { font-size: 1.25rem; padding: 20px; border-radius: 30px;} 
+    .banner .card .card-body .button-group a .icon {margin-right: 0; margin-left:5px; height: 16px;}
+    .banner .card .card-body .button-group a .icon.arrow { background: url(../images/icon/arrow-black.png) no-repeat center; background-size: contain;}
+    .banner .card .card-body .button-group a:hover .icon.arrow { background: url(../images/icon/arrow-white.png) no-repeat center; background-size: contain;}
+    /* shop-list */
+    .shop-list .card .card-body { margin-top: 50px;}
+    .shop-list .card .card-body .button-group button { height: 50px; font-size: 1.25rem;}
+    .shop-list .card .card-body .button-group button.on {background: #555; color: #fff; }
+
+/* join */
+    .sub-visual.join-visual { background: #555 url(../images/join-bg.png) no-repeat center; background-size: cover; }
+
+/* login */
+    .sub-visual.login-visual { background: #555 url(../images/login-bg.png) no-repeat center; background-size: cover; }    
+    .find-password{width: 100%; overflow: hidden; margin-top: 5px;}
+    .find-password a{text-decoration: none; float: left;padding: 5px; font-size: 0.795rem;}
+    .find-password a.join{float: right;}
+
+/* my-page */
+    .sub-visual.my-page-visual { background: #555 url(../images/my-page-bg.png) no-repeat center; background-size: cover; }
+    .sub-visual.my-page-visual .card .card-header span img { left: 3px;}
+
+    .my-page-info .card .card-body .thumnail { margin: 20% 0;}
+    .my-page-info .card .card-body .thumnail img {width: 80%;}
+    
+    .gray { box-sizing: border-box; background: #ddd; font-size: 1.5rem; padding: 20px 10px;}
+
+    .my-page-info .card .card-body .my-page-info-list table,
+    .my-page-order .card .card-body .list-box table { width: 100%; font-size: 1.1rem; border: 1px solid #ddd;}
+    .my-page-info .card .card-body .my-page-info-list table tr th,
+    .my-page-info .card .card-body .my-page-info-list table tr td,
+    .my-page-order .card .card-body .list-box table tr th,
+    .my-page-order .card .card-body .list-box table tr td { padding:15px; border-bottom: 1px solid #ddd;}
+    .my-page-info .card .card-body .my-page-info-list table tr th,
+    .my-page-order .card .card-body .list-box table tr th{ border-right: 1px solid #ddd; text-align: left;}
+    .my-page-info .card .card-body table tr th,
+    .my-page-order .card .card-body .list-box table tr th { background: #eee; border-bottom: 1px solid #ddd;}
+    .my-page-info-list td label,
+    .my-page-order .card .card-body .list-box .order-list table label {display: none; margin-bottom: 7px; background: #eee;}
+
+    .my-page-info-list .input-group { display: none; margin-bottom: 0; }
+    .my-page-info .card .card-body table tr th { border-bottom: 1px solid #ddd;}
+    .my-page-info .card .card-body .my-page-info-list table tr td { width: 100%; }
+    
+    .my-page-order .card .card-body .list-box { width: 100%;}
+    .my-page-order .card .card-body .list-box table tr td { text-align: center;}
+    .my-page-order .card .card-body .list-box .order-list { width: 79%;}
+    .my-page-order .card .card-body .list-box .order-box { width: 20%;}
+    .my-page-order .card .card-body .list-box .order-box { border: 1px solid #ddd; box-sizing: border-box;}
+    .my-page-order .card .card-body .list-box .order-box.align-items { display: flex; align-items: center; flex-direction: column; justify-content: center; }
+    .my-page-order .card .card-body .list-box .order-box img { width: 40%; }
+    .my-page-order .card .card-body .justify-content { display:flex; justify-content: space-between;}
+
+    .button-group .upload, .button-group .cancle { display: none; }
+    
+/* detail */
+    .detail { display: none; border: 2px solid #555; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(70% - 84px); background: #fff;}
+    .detail .card { width: 90%; }
+    .detail .card .card-header .title { padding-bottom: 0;}
+    .detail .card .card-header .close { width: 30px; height: 30px; background: url(../images/icon/close.png) no-repeat center; position: absolute; right: 30px; top: 30px; cursor: pointer; }
+    .detail .card .card-body .detail-img { background: #fff; display: flex; justify-content: center; align-items: center;  min-height: 340px; border: 1px solid #555; margin-right: -1px;}
+    .detail .card .card-body .detail-img img { max-width: 100%; max-height: 340px; }
+    .detail .card .card-body .font-size { font-size: 1.5rem;}
+    .detail .card .card-body .col-6 { position: relative ;}
+    .detail .card .card-body .img-expand { display: block; position:absolute; right: 10px; bottom: 10px; background: url(../images/icon/expand.png) no-repeat center; background-size: contain; }
+    .detail .card .card-body .img-expand a { display: block; width: 100%; height: 100%;}
+    .detail .card .card-body .img-expand.icon { margin-right: 0;}
+    .detail .card .card-footer { padding-top: 10px;}
+    .detail .card .card-footer .icon { width: 20px; height: 20px; background: url(../images/icon/info-gray.png) no-repeat center;  background-size: contain; margin-right: 10px; margin-bottom: -4px;}
+    .detail .card .card-footer .font-size { font-size: 1rem;}
+
+/* 미디어쿼리 */
+@media only screen and (max-width: 1280px) {
+    .shop-list .card .card-body .button-group button { min-width: 90px;}
+
+    .detail .card .card-header .title { margin-bottom: 30px;}
+    .detail .card .card-footer .font-size { letter-spacing: -1px;}
+
+    .detail { width: calc( 90% - 84px );}
+}
+@media only screen and (max-width: 992px) {
+    .gray { font-size: 1.25rem; padding: 10px;}
+
+    .banner .card { background: url(../images/banner-bg.png) no-repeat 70%;}
+    .banner .card .card-header .title {padding-bottom: 30px; font-size: 2.5rem;}
+    .banner .card .card-body .button-group { text-align: center;}
+    .banner .card .card-body .button-group a { padding: 10px 20px; display: block; width: 28%; margin-bottom: 10px;}
+    
+    .shop-list .card .card-body .button-group button { height: 45px; min-width: 90px; font-size: 1.1rem; }
+
+    .my-page-info .card {min-height: 380px;}
+    .my-page-info .card .card-body .my-page-info-list table, .my-page-order .card .card-body .list-box table { font-size: 1rem;}
+   
+    .pagenation { font-size: 0.9rem;}
+
+    .detail .card .card-footer .icon { margin-right: 5px; width: 20px; height: 20px; background-size: contain;}
+    .detail .card .card-body .font-size { font-size: 1.2rem;}
+    .detail .card .card-header .close { width: 20px; height: 20px; background-size: contain;}
+    .detail .card .card-body .detail-img { max-height: 200px;}
+}
+@media only screen and (max-width: 768px) {
+    .banner .card .card-header .title { font-size: 1.75rem;}
+    .banner .card .card-body .button-group a { font-size: 1.1rem; width: 30%;}
+
+    .shop-list .card .card-body .button-group { margin-bottom: 40px;}
+    
+    .my-page-info .card .card-body .col-3.margin { margin: 0 auto;}
+
+    .my-page-order .card .card-body .justify-content { display: block;}
+    .my-page-order .card .card-body .list-box.mb-10 { margin-bottom: 20px;}
+    .my-page-order .card .card-body .list-box .order-list { width: 100% ;}
+    .my-page-order .card .card-body .list-box .order-box { width: 100%;}
+    .my-page-order .card .card-body .list-box .order-box img { display: none;}
+    
+    .detail .card .card-header .close { top: 30px;}
+    .detail .card .card-header .title {margin-top: 10px;}
+
+    .detail .card .card-body .detail-img img { max-height:120px; height: auto; }
+    .detail .card .card-body .detail-img { min-height: 0;}
+}
+@media only screen and (max-width: 572px) {
+    .banner { margin-top: 5%;}
+    .banner .card { min-height:200px; background: url(../images/mobile-banner-bg.png) no-repeat right; }
+    .banner .card .card-header { display: inline-block; width: 60%; }
+    .banner .card .card-header .title { margin-top: 0; font-size: 1.25rem; padding-bottom: 10px; }
+    .banner .card .card-body { display: inline-block; width: 100%; }
+    .banner .card .card-body .button-group { width: 50%;}
+    .banner .card .card-body .button-group a { width: 60%; display: block; padding: 5px; font-size: 1rem; margin-bottom: 8px;}
+    .banner .card .card-body .button-group a .icon { margin-left: 0;}
+
+    .shop-list .card .card-body { margin-top: 0;}
+    .shop-list .card .card-body .button-group button { height: 40px; min-width: 60px; font-size: 1rem; }
+
+    .my-page-info .card .card-body .my-page-info-list table tr td, .my-page-order .card .card-body .list-box table tr td { padding: 10px;}
+    .my-page-info-list th{display: none;}
+    .my-page-info-list td label{display: block;}
+
+    .my-page-order .card .card-body .list-box table tr td { width: 50%;}
+    .my-page-order .card .card-body .list-box .order-list table th { display: none; }
+    .my-page-order .card .card-body .list-box .order-list table label { display: block;}
+
+    .detail .card { padding: 5% 20px;}
+    .detail .card .card-header .close { top: 22px ;}
+    .detail .card .card-header .title { margin-bottom: 20px; margin-top: 0; }
+    .detail .card .card-footer .icon { width: 15px; height: 15px; margin-bottom: -2px;}
+    .detail .card .card-footer .font-size { font-size: 0.8rem;}
+
+    .gray { font-size: 1rem;}
+    .m-d-n { display: none;}
+}
+@media only screen and (max-width: 411px) {
+    .shop-list .card .card-body .button-group button { min-width: 40px; font-size: 0.9rem;}
+}
+@media only screen and (max-width: 360px) {
+    .detail .card .card-header .close { width: 15px; height: 15px; top: 13px; right: 13px;}
+    .detail .card .card-body .font-size { font-size: 1rem;}
+    .detail .card .card-footer p.font-size { line-height: 15px;}
+}
