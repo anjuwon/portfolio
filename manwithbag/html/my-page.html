@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>Man With Bag</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="../js/my-page.js"></script>
+    <script src="../js/pagenation.js"></script>
+    <script src="../js/mobile.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"></a>
+      </div>
+      <div class="menu">
+        <div class="button-group d-n"><button>프로그램 사용</button></div>
+        <a href="../html/shopping.html">SHOPPING</a>
+      </div>
+      <div class="m-gnb">
+        <button>모바일 gnb 열기</button>
+      </div>
+      <div class="gnb">
+        <a href="../html/login.html" class="on letter-spacing">Mypage</a>
+        <a href="../html/join.html" class="letter-spacing">Logout</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="col-12 sub-visual my-page-visual">
+            <div class="card">
+              <div class="card-header">
+                <span><img src="../images/icon/my-page.png" alt="아이콘1"></span>
+                <h1 class="title bold white">MY PAGE</h1>
+              </div>
+              <div class="card-body">
+                <div class="tag-box">
+                  <span class="white">#마이페이지</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 my-page-info">
+            <div class="card">
+              <div class="card-header">
+                <h1 class="title">마이페이지</h1>
+              </div>
+              <div class="row card-body mb-20">
+                <div class="col-12 gray text-left mb-10">회원정보</div>
+                <div class="col-3 margin">
+                  <div class="thumnail">
+                    <img src="../images/logo-black.png" alt="가방든남자 로고">
+                  </div>
+                </div>
+                <div class="col-9 my-page-info-list">
+                  <form action="">
+                    <table >
+                      <colgroup>
+                        <col style="width:25%"/>
+                        <col style="width:100%" />
+                      </colgroup>
+                      <tr>
+                        <th>고객명</th>
+                        <td>
+                          <label for="">고객명</label>
+                          <em>홍길동</em>
+                          <div class="input-group">
+                            <input type="text" name="" value="" placeholder="이름을 입력하세요.">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>ID</th>
+                        <td>
+                          <label for="">ID</label>
+                          <em>HONG</em>
+                          <div class="input-group">
+                            <input type="text" name="" value="" placeholder="전화번호(번호만)를 입력하세요.">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>비밀번호</th>
+                        <td>
+                           <label for="">비밀번호</label>
+                          <em>password</em>
+                          <div class="input-group">
+                            <input type="password" name="" placeholder="비밀번호를 입력하세요">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>비밀번호확인</th>
+                        <td>
+                          <label for="">비밀번호확인</label>
+                          <em>password-check</em>
+                          <div class="input-group">
+                            <input type="text" name="" value="" placeholder="비밀번호를 한번 더 입력하세요.">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>주소</th>
+                        <td>
+                          <label for="">주소</label>
+                          <em>address</em>
+                          <div class="input-group">
+                            <div class="input-append">
+                              <input type="text" name="" value="" placeholder="우편번호">
+                            </div>
+                            <div class="button-group">
+                              <button type="button" name="button">우편번호 검색</button>
+                            </div>
+                            <input type="text" name="" value="" placeholder="우편번호를 검색하세요.">
+                            <input type="text" name="" value="" placeholder="상세주소를 입력하세요.">
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="button-group">
+                    <button class="reload">회원정보 수정하기</button>
+                    <button class="upload">등록하기</button>
+                    <button class="cancle">취소</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 my-page-order">
+            <div class="card">
+              <div class="card-header">
+                <div class="gray mb-10 text-left">주문이력</div>
+              </div>
+              <div class="card-body">
+                <div class="list-box justify-content mb-20">
+                  <div class="order-list">
+                    <table class="mt-20 text-left">
+                      <colgroup>
+                        <col style="width:10%"/>
+                        <col style="width:15%" />
+                        <col style="width:10%"/>
+                        <col style="width:15%" />
+                      </colgroup>
+                      <tr>
+                        <th>주문번호</th>
+                        <td>
+                          <label for="">주문번호</label>
+                          123456789
+                        </td>
+                        <th>제품명</th>
+                        <td>
+                          <label for="">제품명</label>
+                          가방
+                        </td>
+                      </tr>
+                      <tr>
+                      </tr>
+                      <tr>
+                        <th>주문일</th>
+                        <td>
+                          <label for="">주문일</label>
+                          2021-09-14
+                        </td>
+                        <th>금액</th>
+                        <td>
+                          <label for="">금액</label>
+                          500,000
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>선금</th>
+                        <td>
+                          <label for="">선금</label>
+                          200,000
+                        </td>
+                        <th>잔금</th>
+                        <td>
+                          <label for="">잔금</label>
+                          200,000
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="order-box align-items">
+                    <img src="../images/icon/my-page/list.svg" alt="생산계획">
+                    <p>생산계획중</p>
+                  </div>
+                </div>
+                <div class="list-box justify-content mb-20">
+                  <div class="order-list">
+                   <table class="mt-20 text-left">
+                      <colgroup>
+                        <col style="width:10%"/>
+                        <col style="width:15%" />
+                        <col style="width:10%"/>
+                        <col style="width:15%" />
+                      </colgroup>
+                      <tr>
+                        <th>주문번호</th>
+                        <td>
+                          <label for="">주문번호</label>
+                          123456789
+                        </td>
+                        <th>제품명</th>
+                        <td>
+                          <label for="">제품명</label>
+                          가방
+                        </td>
+                      </tr>
+                      <tr>
+                      </tr>
+                      <tr>
+                        <th>주문일</th>
+                        <td>
+                          <label for="">주문일</label>
+                          2021-09-14
+                        </td>
+                        <th>금액</th>
+                        <td>
+                          <label for="">금액</label>
+                          500,000
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>선금</th>
+                        <td>
+                          <label for="">선금</label>
+                          200,000
+                        </td>
+                        <th>잔금</th>
+                        <td>
+                          <label for="">잔금</label>
+                          200,000
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="order-box align-items">
+                    <img src="../images/icon/my-page/tools.svg" alt="제품제작">
+                    <p>제품제작중</p>
+                  </div>
+                </div>
+                <div class="list-box justify-content mb-20">
+                  <div class="order-list">
+                    <table class="mt-20 text-left">
+                      <colgroup>
+                        <col style="width:10%"/>
+                        <col style="width:15%" />
+                        <col style="width:10%"/>
+                        <col style="width:15%" />
+                      </colgroup>
+                      <tr>
+                        <th>주문번호</th>
+                        <td>
+                          <label for="">주문번호</label>
+                          123456789
+                        </td>
+                        <th>제품명</th>
+                        <td>
+                          <label for="">제품명</label>
+                          가방
+                        </td>
+                      </tr>
+                      <tr>
+                      </tr>
+                      <tr>
+                        <th>주문일</th>
+                        <td>
+                          <label for="">주문일</label>
+                          2021-09-14
+                        </td>
+                        <th>금액</th>
+                        <td>
+                          <label for="">금액</label>
+                          500,000
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>선금</th>
+                        <td>
+                          <label for="">선금</label>
+                          200,000
+                        </td>
+                        <th>잔금</th>
+                        <td>
+                          <label for="">잔금</label>
+                          200,000
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="order-box align-items">
+                    <img src="../images/icon/my-page/truck.svg" alt="제품출하">
+                    <p>제품출하중</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="pagenation">
+                  <span class="page-button prev-group">
+                    <a class="first" href="#">첫 페이지</a>
+                    <a class="prev" href="#">이전 페이지</a>
+                  </span>
+                  <span class="page">
+                    <span class="page-wrap">
+                      <strong class="on" title="현재 1 페이지">1</strong>
+                      <strong title="현재 2 페이지">2</strong>
+                    </span>
+                  </span>
+                  <span class="page-button next-group">
+                    <a class="next" href="#">다음 페이지</a>
+                    <a class="last" href="#">마지막 페이지</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="sns">
+          <ul>
+            <li><a href="https://www.instagram.com/man_with_bag2/?igshid=cnof1wht39ks" target="blank" class="ins"></a></li>
+            <li><a href="https://blog.naver.com/manwithbag" target="blank" class="blog"></a></li>
+            <li><a href="https://pf.kakao.com/_nQZLT" target="blank" class="kakao"></a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <address class="col-8">
+            <p class="bold">가방든남자</p>
+            <p>충청북도 청주시 서원구 남이면 2순환로 1683, 2층(가마리 146-2)</p>
+            <p>영업시간 : 평일 10시 - 오후 7시, 토요일 10시 - 오후 3시</p>
+            <p>e-mail : manwithbag@naver.com</p>
+            <p>Tel : 010 - 8076 - 0789</p>
+          </address>
+          <div class="footer-logo"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

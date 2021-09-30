@@ -1,106 +1,113 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr" dir="ltr">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
-    <link rel="stylesheet" href="../css/default.css" />
-    <link rel="stylesheet" href="../css/join.css" />
-    <link rel="stylesheet" href="../css/Mjoin.css" />
-
-
-    <title>man with bag</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>Man With Bag</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="../js/mobile.js"></script>
   </head>
   <body>
-    <main>
-      <header id="header">
-        <h1 class="ta-C"><a href="./index.html"></a></h1>
-        <nav class="ta-C"><a href="./shopping.html">SHOPPING</a></nav>
-        <div class="menu ta-C">
-          <a href="./login.html" class="mr15">LOGIN</a>
-          <a href="./join.html" class="active">JOIN</a>
-        </div>
-      </header>
-      <section id="title">
-        <div class="inner">
-          <div class="titleBox">
-            <div><span class="icon"></span></div>
-            <h2>JOIN</h2>
-            <div class="tagBox">
-              <span class="tag">#JOIN US!</span>
+    <header>
+      <div class="logo">
+        <a href="./index.html"></a>
+      </div>
+      <div class="menu">
+        <div class="button-group d-n"><button>프로그램 사용</button></div>
+        <a href="../html/shopping.html">SHOPPING</a>
+      </div>
+      <div class="m-gnb">
+        <button>모바일 gnb 열기</button>
+      </div>
+      <div class="gnb">
+        <a href="../html/login.html" class="mr-10">Login</a>
+        <a href="../html/join.html" class="on">Join</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="col-12 sub-visual join-visual">
+            <div class="card">
+              <div class="card-header">
+                <span><img src="../images/icon/join.png" alt="아이콘1"></span>
+                <h1 class="title bold white">JOIN</h1>
+              </div>
+              <div class="card-body">
+                <div class="tag-box">
+                  <span class="white">#회원가입</span>
+                  <span class="white">#명품가방리폼</span>
+                  <span class="white">#가방든남자</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="cont">
-        <div class="inner">
-          <div class="joinBox">
-            <div class="joinTop">
-              <h3>회원가입</h3>
-            </div>
-            <div class="joinCont">
-              <div class="inputGroup">
-                <div class="inputBox">
-                  <label for="name">이름</label>
-                  <span><input id="name" type="text" placeholder="이름을 입력하세요" /></span>
+          <div class="col-12">
+            <div class="card cty">
+              <div class="card-header">
+                <h1 class="title">회원가입</h1>
+              </div>
+              <div class="card-body">
+                <div class="input-group">
+                  <label for="">이름</label>
+                  <input type="text" name="" value="" placeholder="이름을 입력하세요.">
                 </div>
-                <div class="inputBox">
-                  <label for="tel">전화번호</label>
-                  <span><input id="tel" type="text" placeholder="번호를 입력하세요" /></span>
+                <div class="input-group">
+                  <label for="">전화번호</label>
+                  <input type="text" name="" value="" placeholder="전화번호를 입력하세요">
                 </div>
-                <div class="inputBox address">
-                  <label for="address">주소</label>
-                  <div class="addressInput">
-                    <span><input id="address" type="text" /></span><button>우편번호 검색</button>
-                    <span><input id="address" type="text" placeholder="기본주소" /></span>
-                    <span><input id="address" type="text" placeholder="상세주소" /></span>
+                <div class="input-group">
+                  <label for="">비밀번호</label>
+                  <input type="password" name="" placeholder="비밀번호를 입력하세요">
+                </div>
+                <div class="input-group">
+                  <label for="">비밀번호 확인</label>
+                  <input type="password" name="" placeholder="비밀번호를 한번 더 입력하세요.">
+                </div>
+                <div class="input-group">
+                  <label for="">주소</label>
+                  <div class="input-append">
+                    <input type="text" name="" value="" placeholder="우편번호">
                   </div>
-                </div>
-                <div class="inputBox">
-                  <label for="pw">비밀번호</label>
-                  <span><input id="pw" type="password" placeholder="비밀번호를 입력하세요" /></span>
-                </div>
-                <div class="inputBox">
-                  <label for="pwCheck">비밀번호 확인</label>
-                  <span><input id="pwCheck" type="password" placeholder="비밀번호를 한번 더 입력하세요" /></span>
+                  <div class="button-group">
+                    <button type="button" name="button">우편번호 검색</button>
+                  </div>
+                  <input type="text" name="" value="" placeholder="기본주소">
+                  <input type="text" name="" value="" placeholder="상세주소를 입력하세요.">
                 </div>
               </div>
-            </div>
-            <div class="joinBtn">
-              <div class="btnGroup">
-                <a href="#">가입하기</a>
+              <div class="card-footer">
+                <div class="button-group">
+                  <button class="full" type="button" name="button">회원가입</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <footer id="footer">
+      </div>
+    </div>
+    <footer>
         <div class="sns">
-          <div class="inner">
-            <div class="snsBox">
-              <a type="button" href="https://www.instagram.com/man_with_bag2/?igshid=cnof1wht39ks" class="instagram mr15"></a>
-              <a type="button" href="https://pf.kakao.com/_nQZLT" class="kakao mr15"></a>
-              <a type="button" href="https://m.blog.naver.com/PostList.nhn?permalink=permalink&blogId=manwithbag" class="blog"></a>
-            </div>
-          </div>
+          <ul>
+            <li><a href="https://www.instagram.com/man_with_bag2/?igshid=cnof1wht39ks" target="blank" class="ins"></a></li>
+            <li><a href="https://blog.naver.com/manwithbag" target="blank" class="blog"></a></li>
+            <li><a href="https://pf.kakao.com/_nQZLT" target="blank" class="kakao"></a></li>
+          </ul>
         </div>
-        <div class="footerInfo">
-          <div class="inner">
-            <div class="l-h20">
-              <p style="font-weight: 600">가방든남자</p>
-              <p>충청북도 청주시 서원구 남이면 2순환로 1683, 2층(가마리 146-2)</p>
-              <p>영업시간 : 평일 10시 - 오후 7시, 토요일 10시 - 오후 3시</p>
-              <p>e-mail : manwithbag@naver.com</p>
-              <p>Tel : 010 - 8076 - 0789</p>
-            </div>
-            <div class="footerLogo"></div>
-          </div>
+        <div class="row">
+          <address class="col-8">
+            <p class="bold">가방든남자</p>
+            <p>충청북도 청주시 서원구 남이면 2순환로 1683, 2층(가마리 146-2)</p>
+            <p>영업시간 : 평일 10시 - 오후 7시, 토요일 10시 - 오후 3시</p>
+            <p>e-mail : manwithbag@naver.com</p>
+            <p>Tel : 010 - 8076 - 0789</p>
+          </address>
+          <div class="footer-logo"></div>
         </div>
-      </footer>
-    </main>
-
-    <script src="../js/jquery-1.12.1.min.js"></script>
-    <script src="../js/.js"></script>
+      </div>
+    </footer>
   </body>
 </html>

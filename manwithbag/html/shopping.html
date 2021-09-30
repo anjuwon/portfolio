@@ -1,186 +1,211 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr" dir="ltr">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
-    <link rel="stylesheet" href="../css/default.css" />
-    <link rel="stylesheet" href="../css/shopping.css" />
-    <link rel="stylesheet" href="../css/Mshopping.css" />
-    <title>man with bag</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <title>Man With Bag</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="../js/shopping.js"></script>
+    <script src="../js/mobile.js"></script>
+    <script src="../js/pagenation.js"></script>
   </head>
   <body>
-    <main>
-      <header id="header">
-        <h1 class="ta-C"><a href="./index.html"></a></h1>
-        <nav class="ta-C"><a href="./shopping.html" class="active">SHOPPING</a></nav>
-        <div class="menu ta-C">
-          <a href="./login.html" class="mr15">LOGIN</a>
-          <a href="./join.html">JOIN</a>
-        </div>
-      </header>
-      <section id="title">
-        <div class="inner">
-          <div class="titleBox">
-            <div><span class="icon"></span></div>
-            <h2>SHOPPING</h2>
-            <div class="tagBox">
-              <span class="tag">#REUSE</span>
-              <span class="tag">#REDUCE</span>
-              <span class="tag">#RECYCEL</span>
-              <span class="tag">#UPCYCELING</span>
+   <header>
+      <div class="logo">
+        <a href="./index.html"></a>
+      </div>
+      <div class="menu">
+        <div class="button-group d-n"><button>프로그램 사용</button></div>
+        <a href="../html/shopping.html" class="on">SHOPPING</a>
+      </div>
+      <div class="m-gnb">
+        <button>모바일 gnb 열기</button>
+      </div>
+      <div class="gnb">
+        <a href="../html/login.html" class="mr-10">Login</a>
+        <a href="../html/join.html">Join</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="col-12 sub-visual shop-visual">
+            <div class="card">
+              <div class="card-header">
+                <span><img src="../images/icon/shop.png" alt="아이콘1"></span>
+                <h1 class="title bold white">SHOP</h1>
+              </div>
+              <div class="card-body">
+                <div class="tag-box">
+                  <span class="white">#UPCYCELING</span>
+                  <span class="white">#REUSE</span>
+                  <span class="white">#REDUCE</span>
+                  <span class="white">#RECYCEL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 banner">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="title bold text-left">가방든남자의<br class="m-d-n" /> 다양한 컨텐츠를<br class="m-d-n"/> SNS로 만나보세요!</h2>
+            </div>
+            <div class="card-body">
+              <div class="button-group">
+                <a href="https://www.instagram.com/man_with_bag2/?igshid=cnof1wht39ks" target="blank">인스타 <span class="m-d-n">바로가기</span><span class="icon arrow"></span></a>
+                <a href="https://pf.kakao.com/_nQZLT" target="blank">유튜브 <span class="m-d-n">바로가기</span><span class="icon arrow"></span></a>
+                <a href="https://m.blog.naver.com/PostList.nhn?permalink=permalink&blogId=manwithbag" target="blank">블로그 <span class="m-d-n">바로가기</span><span class="icon arrow"></span></a>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section id="cont">
-        <div class="inner">
-          <div class="content">
-            <h3><span>SNS</span>로 <span>가방든남자</span>의<br />다양한 컨텐츠를<br />만나보세요!</h3>
-            <div class="btnGroup">
-              <a class="btn-white" type="button" href="https://www.instagram.com/man_with_bag2/?igshid=cnof1wht39ks">인스타 바로가기<span></span></a>
-              <a class="btn-white" type="button" href="https://pf.kakao.com/_nQZLT">유튜브 바로가기<span></span></a>
-              <a class="btn-white" type="button" href="https://m.blog.naver.com/PostList.nhn?permalink=permalink&blogId=manwithbag">블로그 바로가기<span></span></a>
-            </div>
-          </div>
-          <div class="tabMenu">
-            <div class="tabBtn">
-              <a class="active" href="#">ALL</a>
-              <a href="#">가방</a>
-              <a href="#">신발</a>
-              <a href="#">벨트</a>
-              <a href="#">지갑</a>
-            </div>
-            <div class="tabCont">
-              <div class="bbs_info">
-                <span>total <strong>50</strong></span>
-                <span class="ml15 line">page <strong>1</strong>/1</span>
+          <div class="col-12 shop-list">
+            <div class="card">
+              <div class="card-body">
+                <div>
+                  <div class="button-group">
+                    <button class="on" href="#">전체</button>
+                    <button href="#">가방</button>
+                    <button href="#">신발</button>
+                    <button href="#">벨트</button>
+                    <button href="#">지갑</button>
+                  </div>
+                  <div>
+                    <div class="page-info line text-right mb-10">
+                      <span>total <strong>50</strong></span>
+                      <span class="ml-15">page <strong>1</strong>/1</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                      <div class="col-4 post-box">
+                        <img src="../images/bag.jpg" alt="가방" />
+                        <button class="box-title">구찌업사이클링</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
+              <div class="card-footer">
+                <div class="pagenation">
+                  <span class="page-button prev-group">
+                    <a class="first" href="#">첫 페이지</a>
+                    <a class="prev" href="#">이전 페이지</a>
+                  </span>
+                  <span class="page">
+                    <span class="page-wrap">
+                      <strong class="on" title="현재 1 페이지">1</strong>
+                      <strong title="현재 2 페이지">2</strong>
+                      <strong title="현재 3 페이지">3</strong>
+                      <strong title="현재 4 페이지">4</strong>
+                    </span>
+                  </span>
+                  <span class="page-button next-group">
+                    <a class="next" href="#">다음 페이지</a>
+                    <a class="last" href="#">마지막 페이지</a>
+                  </span>
+                </div>
               </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-              <div class="box">
-                <img src="../images/bag.jpg" alt="가방" />
-                <a href="#" class="fs24 boxTitle">구찌업사이클링</a>
-              </div>
-            </div>
-            <div class="pagenation">
-              <span class="page_btn prev_group">
-                <a class="first" href="#">첫 페이지</a>
-                <a class="previous" href="#">이전 페이지</a>
-              </span>
-              <span class="page">
-                <span class="page_wrap">
-                  <strong class="on" title="현재 1 페이지">1</strong>
-                  <strong title="현재 2 페이지">2</strong>
-                  <strong title="현재 3 페이지">3</strong>
-                  <strong title="현재 4 페이지">4</strong>
-                </span>
-              </span>
-              <span class="page_btn next_group">
-                <a class="next" href="#">다음 페이지</a>
-                <a class="last" href="#">마지막 페이지</a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer id="footer">
-        <div class="sns">
-          <div class="inner">
-            <div class="snsBox">
-              <a type="button" href="https://www.instagram.com/man_with_bag2/?igshid=cnof1wht39ks" class="instagram mr15"></a>
-              <a type="button" href="https://pf.kakao.com/_nQZLT" class="kakao mr15"></a>
-              <a type="button" href="https://m.blog.naver.com/PostList.nhn?permalink=permalink&blogId=manwithbag" class="blog"></a>
             </div>
           </div>
         </div>
-        <div class="footerInfo">
-          <div class="inner">
-            <div class="l-h20">
-              <p style="font-weight: 600">가방든남자</p>
-              <p>충청북도 청주시 서원구 남이면 2순환로 1683, 2층(가마리 146-2)</p>
-              <p>영업시간 : 평일 10시 - 오후 7시, 토요일 10시 - 오후 3시</p>
-              <p>e-mail : manwithbag@naver.com</p>
-              <p>Tel : 010 - 8076 - 0789</p>
-            </div>
-            <div class="footerLogo"></div>
-          </div>
-        </div>
-      </footer>
-    </main>
-
-    <!-- detail 레이어팝업 -->
-    <div class="detail">
-      <div class="detailBox">
-        <div class="detail_title">
-          <span></span>
-          구찌업사이클링해서 만든 가방입니다
-          <!-- <span></span> -->
-          <div class="close"></div>
-        </div>
-        <div class="detail_cont">
-          <div>
-            <p>before</p>
-            <div class="imgBox">
-              <img src="../images/bag4.jpg" alt="가방" />
-            </div>
-          </div>
-          <div class="iconBox"><span class="icon"></span></div>
-          <div>
-            <p>after</p>
-            <div class="imgBox">
-              <img src="../images/bag5.png" alt="가방" />
-            </div>
-          </div>
-        </div>
-        <p><span class="icon"></span>정품과 1:1 이미테이션작업이 아닌 부분 꼭 이해하시고 리폼 결정해 주시기 바랍니다.</p>
       </div>
     </div>
+    <footer>
+        <div class="sns">
+          <ul>
+            <li><a href="https://www.instagram.com/man_with_bag2/?igshid=cnof1wht39ks" target="blank" class="ins"></a></li>
+            <li><a href="https://blog.naver.com/manwithbag" target="blank" class="blog"></a></li>
+            <li><a href="https://pf.kakao.com/_nQZLT" target="blank" class="kakao"></a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <address class="col-8">
+            <p class="bold">가방든남자</p>
+            <p>충청북도 청주시 서원구 남이면 2순환로 1683, 2층(가마리 146-2)</p>
+            <p>영업시간 : 평일 10시 - 오후 7시, 토요일 10시 - 오후 3시</p>
+            <p>e-mail : manwithbag@naver.com</p>
+            <p>Tel : 010 - 8076 - 0789</p>
+          </address>
+          <div class="footer-logo"></div>
+        </div>
+      </div>
+    </footer>
 
-    <script src="../js/jquery-1.12.1.min.js"></script>
-    <script src="../js/shopping.js"></script>
+    <!-- detail 레이어 팝업 -->
+    <div class="detail">
+      <div class="card">
+        <div class="card-header">
+          <h1 class="title">구찌 업사이클링</h1>
+          <div class="close"></div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <p class="font-size">BEFORE</p>
+              <div class="detail-img">
+                <img src="../images/bag.jpg" alt="제품 리폼 전">
+              </div>
+              <div class="img-expand icon"><a href="../images/bag.jpg" target="blank"></a></div>
+            </div>
+            <div class="col-6">
+              <p class="font-size">AFTER</p>
+              <div class="detail-img">
+                <img src="../images/bag5.png" alt="제품 리폼 전">
+              </div>
+              <div class="img-expand icon"><a href="../images/bag5.png" target="blank"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <p class="font-size"><span class="icon"></span>정품과 1:1 이미테이션작업이 아닌 부분임을 꼭 이해하시고 리폼 결정해 주시기 바랍니다.</p>
+        </div>
+      </div> 
+    </div>
   </body>
 </html>

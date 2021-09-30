@@ -1,6 +1,7 @@
-@import url('reset.css');
-@import url('base.css');
-@import url('font.css');
-@import url('topBottom.css');
-@import url('sub.css');
-@import url('board.css');
+@charset "utf-8";
+/* CSS Document */
+
+@import 'reset.css';
+@import 'common.css';
+@import 'base.css';
+@import 'font.css';
