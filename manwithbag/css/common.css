@@ -23,7 +23,6 @@ header .button-group { display: inline; width: 7%; position: absolute; left:33%;
 header .button-group button{ height: auto; padding: 5px;}
 header .button-group button:hover { background: #eee; color: #333; cursor: auto; }
 
-
 .button-group.opacity { opacity: 0; }
 
 
